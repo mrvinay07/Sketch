@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/videodl_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/title" android:layout_width="match_parent" android:layout_height="52dp">
+            <TextView android:textSize="24dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weekly Reward" android:layout_centerInParent="true"/>
+            <View android:background="#ffffff" android:layout_width="match_parent" android:layout_height="3dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/tt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_below="@+id/title" android:layout_centerHorizontal="true">
+            <TextView android:textSize="16dp" android:textColor="#ffffff" android:id="@+id/reward_text" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Extra 50 credits are added as a weekly reward" android:layout_centerInParent="true" android:textAlignment="center"
+                style="@style/TextAppearance.DeviceDefault.Medium"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout" android:padding="8dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="15dp" android:layout_below="@+id/tt">
+            <Button android:textSize="18dp" android:textColor="@color/colorWhite" android:id="@+id/yes" android:background="@drawable/video_play_button" android:layout_width="100dp" android:layout_height="match_parent" android:text="Ok" android:textAllCaps="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

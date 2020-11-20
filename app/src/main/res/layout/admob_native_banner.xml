@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.UnifiedNativeAdView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/admob_native" android:background="@drawable/admob_native_banner_background" android:layout_width="match_parent" android:layout_height="55dp" android:layout_margin="3dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="55dp">
+        <RelativeLayout android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/ad_app_icon" android:layout_width="50dp" android:layout_height="50dp" android:adjustViewBounds="true" android:layout_centerVertical="true"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="8dp" android:layout_toLeftOf="@+id/native_ad_call_to_action" android:layout_toRightOf="@+id/ad_app_icon" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/ad_headline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The title provided by the adv! Hello my name is ammar"/>
+                    <TextView android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/ad_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hello my name is ammar i am a solo app programmer i have develop an android application !"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="11dp" android:textColor="#ffffff" android:gravity="center" android:background="#ffa500" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="35dp" android:text="Ad" android:layout_alignParentRight="true"/>
+            <Button android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/native_ad_call_to_action" android:background="@color/ctacolor" android:layout_width="wrap_content" android:layout_height="25dp" android:layout_marginTop="25dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.google.android.gms.ads.formats.UnifiedNativeAdView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/background" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/credit_title" android:background="@color/colorDarkBlue" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/credit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Credits : " android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/my_recycler_view" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_below="@+id/credit_title" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.teamvinay.sketch"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'jp.co.cyberagent.android:gpuimage:2.0.2'
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
+    compile 'com.facebook.android:audience-network-sdk:4.99.1'
+   // compile 'com.facebook.android:audience-network-sdk:6.+'
+    implementation('com.mopub:mopub-sdk:+@aar') {
+        transitive = true
+    }
+    // https://mvnrepository.com/artifact/org.openpnp/opencv
+    implementation 'org.openpnp:opencv:4.3.0-2'
+    implementation 'org.wysaid:gpuimage-plus:2.6.3'
+    implementation 'org.opencv:opencv-android:1.0.1'
+    implementation 'com.anjlab.android.iab.v3:library:1.0.44'
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.exifinterface:exifinterface:1.3.1'
+    implementation 'com.github.ome450901:SimpleRatingBar:1.5.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.llollox:androidtoggleswitch:2.0.3'
+    implementation  'io.fabric.sdk.android:fabric:1.4.8'
+    implementation 'com.github.hotchemi:android-rate:1.0.1'
+    implementation'com.morsebyte.shailesh.twostagerating:TwoStageRate:2.0'
+    implementation 'com.github.yalantis:ucrop:2.2.6-native'
+
+    // https://mvnrepository.com/artifact/androidx.multidex/multidex
+    implementation 'androidx.multidex:multidex:2.0.0'
+
+    implementation 'com.jdroidtools:jdroid-android-firebase-remoteconfig:2.0.0'
+
+    // https://mvnrepository.com/artifact/com.crashlytics.sdk.android/crashlytics
+    implementation 'com.google.firebase:firebase-analytics:18.0.0'
+
+    implementation 'com.facebook.android:facebook-android-sdk:8.0.0'
+
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+
+    implementation 'com.crashlytics.sdk.android:crashlytics-ndk:2.1.1'
+
+
+// https://mvnrepository.com/artifact/com.google.firebase/firebase-iid
+   implementation 'com.google.firebase:firebase-iid: 11.4.0'
+
+    compile 'com.wang.avi:library:2.1.3'
+
+
+// https://mvnrepository.com/artifact/com.google.guava/guava
+    implementation 'com.google.guava:guava:30.0-jre'
+
+    compile 'com.instagram.igdiskcache:ig-disk-cache:1.0.0'
+
+}

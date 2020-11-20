@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/background" android:background="@drawable/shape" android:padding="1dp" android:layout_width="match_parent" android:layout_height="100dp" android:layout_margin="5dp">
+    <RelativeLayout android:id="@+id/title" android:layout_width="match_parent" android:layout_height="25dp" android:layout_marginLeft="10dp">
+        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bronze" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/popular_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="( Most Popular )" android:layout_toRightOf="@+id/title_text" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/action_layout" android:layout_below="@+id/title">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/original_credit_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/credit_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25 Credits"/>
+            <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/remove_ads" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+Remove Ads" android:layout_below="@+id/credit_amount" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/action_layout" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INR 100" android:layout_below="@+id/original_price" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:id="@+id/purchase_button" android:background="#24d330" android:layout_width="80dp" android:layout_height="25dp" android:layout_marginTop="10dp" android:layout_below="@+id/price" android:layout_centerHorizontal="true">
+            <TextView android:textColor="@color/colorWhite" android:id="@+id/button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/credits_purchase_text" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

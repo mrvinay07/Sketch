@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/mopub_ad_view" android:background="#ffffff" android:layout_width="80dp" android:layout_height="84dp" android:layout_marginTop="8dp">
+    <ImageView android:id="@+id/native_ad_privacy_information_icon_image" android:padding="11dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@+id/promotion_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="Ad"/>
+    <ImageView android:id="@+id/native_image" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="20dp" android:src="@color/ctacolor" android:layout_toLeftOf="@+id/native_ad_privacy_information_icon_image"/>
+    <TextView android:textSize="9sp" android:ellipsize="end" android:id="@+id/native_text" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Like any other social media site Facebook has leng" android:maxLines="3" android:layout_below="@+id/native_image" android:layout_centerHorizontal="true" android:textAlignment="viewStart"/>
+</RelativeLayout>

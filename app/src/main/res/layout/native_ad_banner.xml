@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="55dp">
+    <RelativeLayout android:background="@drawable/admob_native_banner_background" android:layout_width="match_parent" android:layout_height="55dp">
+        <RelativeLayout android:id="@+id/adLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/native_ad_privacy_information_icon_image" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp"/>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/native_ad_sponsored_label" android:background="#ffa500" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="Ad" android:layout_toLeftOf="@+id/adLabel"/>
+        <RelativeLayout android:id="@+id/native_icon_outer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/native_ad_icon" android:layout_width="35dp" android:layout_height="35dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="5dp" android:layout_toLeftOf="@+id/action_button" android:layout_toRightOf="@+id/native_icon_outer" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="9sp" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/native_ad_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textSize="8sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/native_ad_body" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/action_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <Button android:textSize="8sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/native_ad_call_to_action" android:background="@color/ctacolor" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="20dp" android:text="Write or paste!"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/dialog_title_text_color" android:id="@+id/tvConfirmRateTitle" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/dialog_subtext_text_color" android:id="@+id/tvConfirmRateText" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/rate_prompt_button_text_color" android:gravity="center_horizontal" android:id="@+id/tvConfirmDeny" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/rate_prompt_button_text_color" android:gravity="center_horizontal" android:id="@+id/tvConfirmSubmit" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
