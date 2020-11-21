@@ -29,7 +29,7 @@
         <item name="minHeight">24dp</item>
         <item name="minWidth">24dp</item>
     </style>
-    <style name="AlertDialog.AppCompat"> </style>
+<!--    <style name="AlertDialog.AppCompat"> </style>
     <style name="AlertDialog.AppCompat.Light"> </style>
     <style name="Animation.AppCompat.Dialog"> </style>
     <style name="Animation.AppCompat.DropDownUp"> </style>
@@ -37,17 +37,17 @@
     <style name="Animation.Design.BottomSheetDialog">
         <item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
-    </style>
+    </style>-->
     <style name="AppTheme"> </style>
-    <style name="Base.AlertDialog.AppCompat">
+    <!--<style name="Base.AlertDialog.AppCompat">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="buttonIconDimen">@dimen/abc_alert_dialog_button_dimen</item>
         <item name="listItemLayout">@layout/select_dialog_item_material</item>
         <item name="listLayout">@layout/abc_select_dialog_material</item>
         <item name="multiChoiceItemLayout">@layout/select_dialog_multichoice_material</item>
         <item name="singleChoiceItemLayout">@layout/select_dialog_singlechoice_material</item>
-    </style>
-    <style name="Base.AlertDialog.AppCompat.Light"> </style>
+    </style>-->
+   <!-- <style name="Base.AlertDialog.AppCompat.Light"> </style>
     <style name="Base.Animation.AppCompat.Dialog">
         <item name="android:windowEnterAnimation">@anim/abc_popup_enter</item>
         <item name="android:windowExitAnimation">@anim/abc_popup_exit</item>
@@ -862,8 +862,8 @@
         <item name="listPreferredItemPaddingRight">24dp</item>
         <item name="windowActionBar">false</item>
         <item name="windowActionModeOverlay">true</item>
-    </style>
-    <style name="Base.V7.ThemeOverlay.AppCompat.Dialog">
+    </style>-->
+    <!--<style name="Base.V7.ThemeOverlay.AppCompat.Dialog">
         <item name="android:colorBackground">?attr/colorBackgroundFloating</item>
         <item name="android:windowBackground">@drawable/abc_dialog_material_background</item>
         <item name="android:windowFrame">@null</item>
@@ -1138,16 +1138,16 @@
         <item name="rippleColor">@color/mtrl_chip_ripple_color</item>
         <item name="textEndPadding">6dp</item>
         <item name="textStartPadding">8dp</item>
-    </style>
-    <style name="Base.Widget.MaterialComponents.TextInputEditText">
+    </style>-->
+<!--    <style name="Base.Widget.MaterialComponents.TextInputEditText">
         <item name="android:paddingLeft">12dp</item>
         <item name="android:paddingTop">16dp</item>
         <item name="android:paddingRight">12dp</item>
         <item name="android:paddingBottom">16dp</item>
         <item name="android:paddingStart">12dp</item>
         <item name="android:paddingEnd">12dp</item>
-    </style>
-    <style name="Base.Widget.MaterialComponents.TextInputLayout">
+    </style>-->
+<!--    <style name="Base.Widget.MaterialComponents.TextInputLayout">
         <item name="boxBackgroundColor">@null</item>
         <item name="boxBackgroundMode">2</item>
         <item name="boxCollapsedPaddingTop">0dp</item>
@@ -1156,7 +1156,7 @@
         <item name="boxCornerRadiusTopEnd">@dimen/mtrl_textinput_box_corner_radius_medium</item>
         <item name="boxCornerRadiusTopStart">@dimen/mtrl_textinput_box_corner_radius_medium</item>
         <item name="boxStrokeColor">?attr/colorControlActivated</item>
-    </style>
+    </style>-->
     <style name="BottomBarButton">
         <item name="android:gravity">center_horizontal</item>
         <item name="android:background">@null</item>
@@ -1166,23 +1166,23 @@
         <item name="android:scaleType">fitXY</item>
     </style>
     <style name="BottomBarButton.CC">
-        <item name="android:src">?unknown_ref: 7f080113</item>
+        <item name="android:src">#7f080113</item>
         <item name="android:contentDescription">@string/mcv2_cc_is_off</item>
     </style>
     <style name="BottomBarButton.FullScreen">
-        <item name="android:src">?unknown_ref: 7f0800fb</item>
+        <item name="android:src">#7f0800fb</item>
         <item name="android:contentDescription">@string/mcv2_full_screen_button_desc</item>
     </style>
     <style name="BottomBarButton.OverflowHide">
-        <item name="android:src">?unknown_ref: 7f0800f4</item>
+        <item name="android:src">#7f0800f4</item>
         <item name="android:contentDescription">@string/mcv2_overflow_left_button_desc</item>
     </style>
     <style name="BottomBarButton.OverflowShow">
-        <item name="android:src">?unknown_ref: 7f0800f5</item>
+        <item name="android:src">#7f0800f5</item>
         <item name="android:contentDescription">@string/mcv2_overflow_right_button_desc</item>
     </style>
     <style name="BottomBarButton.Settings">
-        <item name="android:src">?unknown_ref: 7f08010d</item>
+        <item name="android:src">#7f08010d</item>
         <item name="android:contentDescription">@string/mcv2_settings_button_desc</item>
     </style>
     <style name="CardView"> </style>
@@ -1224,35 +1224,35 @@
         <item name="android:padding">@dimen/mcv2_embedded_icon_padding</item>
         <item name="android:layout_width">@dimen/mcv2_icon_size</item>
         <item name="android:layout_height">@dimen/mcv2_icon_size</item>
-        <item name="android:src">?unknown_ref: 7f0800fa</item>
+        <item name="android:src">#7f0800fa</item>
         <item name="android:contentDescription">@string/mcv2_ffwd_button_desc</item>
     </style>
     <style name="EmbeddedTransportControlsButton.Next">
         <item name="android:padding">@dimen/mcv2_embedded_icon_padding</item>
         <item name="android:layout_width">@dimen/mcv2_icon_size</item>
         <item name="android:layout_height">@dimen/mcv2_icon_size</item>
-        <item name="android:src">?unknown_ref: 7f08010e</item>
+        <item name="android:src">#7f08010e</item>
         <item name="android:contentDescription">@string/mcv2_next_button_desc</item>
     </style>
     <style name="EmbeddedTransportControlsButton.Pause">
         <item name="android:padding">@dimen/mcv2_pause_icon_padding</item>
         <item name="android:layout_width">@dimen/mcv2_icon_size</item>
         <item name="android:layout_height">@dimen/mcv2_icon_size</item>
-        <item name="android:src">?unknown_ref: 7f080106</item>
+        <item name="android:src">#7f080106</item>
         <item name="android:contentDescription">@string/mcv2_pause_button_desc</item>
     </style>
     <style name="EmbeddedTransportControlsButton.Previous">
         <item name="android:padding">@dimen/mcv2_embedded_icon_padding</item>
         <item name="android:layout_width">@dimen/mcv2_icon_size</item>
         <item name="android:layout_height">@dimen/mcv2_icon_size</item>
-        <item name="android:src">?unknown_ref: 7f08010f</item>
+        <item name="android:src">#7f08010f</item>
         <item name="android:contentDescription">@string/mcv2_previous_button_desc</item>
     </style>
     <style name="EmbeddedTransportControlsButton.Rew">
         <item name="android:padding">@dimen/mcv2_embedded_icon_padding</item>
         <item name="android:layout_width">@dimen/mcv2_icon_size</item>
         <item name="android:layout_height">@dimen/mcv2_icon_size</item>
-        <item name="android:src">?unknown_ref: 7f08010a</item>
+        <item name="android:src">#7f08010a</item>
         <item name="android:contentDescription">@string/mcv2_rewind_button_desc</item>
     </style>
     <style name="FiamUI"> </style>
@@ -1277,7 +1277,7 @@
     <style name="FiamUI.Card.ImageView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:src">?unknown_ref: 7f080117</item>
+        <item name="android:src">#7f080117</item>
         <item name="android:scaleType">centerCrop</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:minWidth">@dimen/minImageWidth</item>
@@ -1316,7 +1316,7 @@
         <item name="android:layout_gravity">left|center_horizontal|clip_horizontal</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:src">?unknown_ref: 7f080117</item>
+        <item name="android:src">#7f080117</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:minWidth">@dimen/minImageWidth</item>
         <item name="android:minHeight">@dimen/minImageHeight</item>
@@ -1326,10 +1326,12 @@
         <item name="android:layout_gravity">left|center_horizontal|clip_horizontal</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:src">?unknown_ref: 7f080117</item>
+        <item name="android:src">#7f080117</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:minWidth">@dimen/minImageWidth</item>
         <item name="android:minHeight">@dimen/minImageHeight</item>
+    </style>
+    <style name="FiamUI.Text">
     </style>
     <style name="FiamUI.Text.BannerTitle">
         <item name="android:textSize">16sp</item>
@@ -1349,35 +1351,35 @@
         <item name="android:padding">@dimen/mcv2_full_icon_padding</item>
         <item name="android:layout_width">@dimen/mcv2_icon_size</item>
         <item name="android:layout_height">@dimen/mcv2_icon_size</item>
-        <item name="android:src">?unknown_ref: 7f0800fa</item>
+        <item name="android:src">#7f0800fa</item>
         <item name="android:contentDescription">@string/mcv2_ffwd_button_desc</item>
     </style>
     <style name="FullTransportControlsButton.Next">
         <item name="android:padding">@dimen/mcv2_full_icon_padding</item>
         <item name="android:layout_width">@dimen/mcv2_icon_size</item>
         <item name="android:layout_height">@dimen/mcv2_icon_size</item>
-        <item name="android:src">?unknown_ref: 7f08010e</item>
+        <item name="android:src">#7f08010e</item>
         <item name="android:contentDescription">@string/mcv2_next_button_desc</item>
     </style>
     <style name="FullTransportControlsButton.Pause">
         <item name="android:padding">@dimen/mcv2_pause_icon_padding</item>
         <item name="android:layout_width">@dimen/mcv2_icon_size</item>
         <item name="android:layout_height">@dimen/mcv2_icon_size</item>
-        <item name="android:src">?unknown_ref: 7f080106</item>
+        <item name="android:src">#7f080106</item>
         <item name="android:contentDescription">@string/mcv2_pause_button_desc</item>
     </style>
     <style name="FullTransportControlsButton.Previous">
         <item name="android:padding">@dimen/mcv2_full_icon_padding</item>
         <item name="android:layout_width">@dimen/mcv2_icon_size</item>
         <item name="android:layout_height">@dimen/mcv2_icon_size</item>
-        <item name="android:src">?unknown_ref: 7f08010f</item>
+        <item name="android:src">#7f08010f</item>
         <item name="android:contentDescription">@string/mcv2_previous_button_desc</item>
     </style>
     <style name="FullTransportControlsButton.Rew">
         <item name="android:padding">@dimen/mcv2_full_icon_padding</item>
         <item name="android:layout_width">@dimen/mcv2_icon_size</item>
         <item name="android:layout_height">@dimen/mcv2_icon_size</item>
-        <item name="android:src">?unknown_ref: 7f08010a</item>
+        <item name="android:src">#7f08010a</item>
         <item name="android:contentDescription">@string/mcv2_rewind_button_desc</item>
     </style>
     <style name="MinimalTransportControlsButton">
@@ -1385,7 +1387,7 @@
         <item name="android:padding">@dimen/mcv2_pause_icon_padding</item>
         <item name="android:layout_width">@dimen/mcv2_icon_size</item>
         <item name="android:layout_height">@dimen/mcv2_icon_size</item>
-        <item name="android:src">?unknown_ref: 7f080106</item>
+        <item name="android:src">#7f080106</item>
         <item name="android:scaleType">fitXY</item>
         <item name="android:contentDescription">@string/mcv2_pause_button_desc</item>
     </style>
@@ -1394,7 +1396,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Platform.AppCompat"> </style>
+    <!--style name="Platform.AppCompat"> </style>
     <style name="Platform.AppCompat.Light"> </style>
     <style name="Platform.MaterialComponents"> </style>
     <style name="Platform.MaterialComponents.Dialog"> </style>
@@ -1427,7 +1429,7 @@
         <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
         <item name="android:textColorLinkInverse">?android:attr/colorAccent</item>
     </style>
-    <style name="Platform.Widget.AppCompat.Spinner"> </style>
+    <style name="Platform.Widget.AppCompat.Spinner"> </style>-->
     <style name="RateUsDialogTheme">
         <item name="android:windowBackground">@drawable/dialog_background</item>
         <item name="android:windowNoTitle">true</item>
@@ -1439,7 +1441,7 @@
         <item name="colorControlActivated">@color/colorWhite</item>
         <item name="colorControlNormal">@color/ctacolor</item>
     </style>
-    <style name="RtlOverlay.DialogWindowTitle.AppCompat">
+    <!--<style name="RtlOverlay.DialogWindowTitle.AppCompat">
         <item name="android:textAlignment">viewStart</item>
     </style>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem">
@@ -1831,7 +1833,7 @@
     </style>
     <style name="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
         <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense</item>
-    </style>
+    </style>-->
     <style name="TimeText">
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
@@ -1866,7 +1868,7 @@
         <item name="android:scaleType">fitXY</item>
     </style>
     <style name="TitleBarButton.Launch">
-        <item name="android:src">?unknown_ref: 7f0800ff</item>
+        <item name="android:src">#7f0800ff</item>
         <item name="android:contentDescription">@string/mcv2_launch_button_desc</item>
     </style>
     <style name="ToolbarTitle">
@@ -1888,7 +1890,7 @@
         <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
         <item name="android:windowMinWidthMinor">100%</item>
     </style>
-    <style name="Widget.AppCompat.ActionBar"> </style>
+    <!--<style name="Widget.AppCompat.ActionBar"> </style>
     <style name="Widget.AppCompat.ActionBar.Solid"> </style>
     <style name="Widget.AppCompat.ActionBar.TabBar"> </style>
     <style name="Widget.AppCompat.ActionBar.TabText"> </style>
@@ -2240,7 +2242,7 @@
     </style>
     <style name="Widget.Support.CoordinatorLayout">
         <item name="statusBarBackground">#000000</item>
-    </style>
+    </style>-->
     <style name="com_facebook_activity_theme">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>

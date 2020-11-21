@@ -8,6 +8,6 @@
         </shape>
     </item>
     <item>
-        <bitmap android:gravity="center" android:src="0x7f0800de"/>
+        <bitmap android:gravity="center" android:src="@color/colorPrimaryDark"/>
     </item>
 </layer-list>

@@ -8,8 +8,8 @@
         <include layout="@layout/loading_native_ad"/>
     </RelativeLayout>
     <LinearLayout android:id="@+id/options" android:background="#80000000" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginBottom="15dp" android:layout_above="@+id/tab">
-        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="0x7f080068" android:tint="#ffffff" android:layout_weight="1"/>
-        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="0x7f080069" android:tint="#ffffff" android:layout_weight="1"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/fb_icon" android:tint="#ffffff" android:layout_weight="1"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/fb_icon" android:tint="#ffffff" android:layout_weight="1"/>
         <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/fb_icon" android:tint="#ffffff" android:layout_weight="1"/>
         <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/instagram" android:tint="#ffffff" android:layout_weight="1"/>
     </LinearLayout>
