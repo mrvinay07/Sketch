@@ -60,22 +60,22 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
     private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-4195495625122728/4049138684";
     AdLoader adLoader;
     RelativeLayout adView;
-    private RelativeLayout ad_button;
+    private Button ad_button;
     /* access modifiers changed from: private */
     public UnifiedNativeAd admob_nativeAd = null;
     private boolean adnative = false;
     AdLoader.Builder builder;
-    private LinearLayout cameraButton;
+    private Button cameraButton;
     /* access modifiers changed from: private */
     public boolean fbLoaded = false;
-    private LinearLayout fbShareButton;
+    private Button fbShareButton;
     /* access modifiers changed from: private */
     public boolean fb_load_called = false;
     @Nullable
     NativeAd fbnativeAd;
     private boolean freshStart = true;
-    private LinearLayout galleryButton;
-    private LinearLayout likeUsButton;
+    private Button galleryButton;
+    private Button likeUsButton;
     private Context mcontext;
     private List<ViewElements> menuItems = new ArrayList();
     private DrawerItemsAdapter menuItemsAdapter;
@@ -85,15 +85,15 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
     private MoPubNative.MoPubNativeNetworkListener moPubNativeNetworkListener;
     /* access modifiers changed from: private */
     public com.mopub.nativeads.NativeAd mopubNativeAd = null;
-    private LinearLayout moreAppsButton;
+    private Button moreAppsButton;
     private boolean mpnative = false;
     @Nullable
     NativeAd nativeAd;
     RelativeLayout nativeAdContainer;
 
-    private RelativeLayout purchaseButton;
+    private Button purchaseButton;
     private TextView purchaseButtonText;
-    private LinearLayout rateButton;
+    private Button rateButton;
     private TextView removeAdsText;
     /* access modifiers changed from: private */
     public ImageView screen_image;
@@ -113,14 +113,14 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
        // this.nativeAdLayout = (NativeAdLayout) this.view.findViewById(C3674R.C3676id.native_ad_container);
         this.nativeAdContainer = (RelativeLayout) this.view.findViewById(R.id.container);
         this.screen_image = (ImageView) this.view.findViewById(R.id.main_screen_image);
-        this.galleryButton = (LinearLayout) this.view.findViewById(R.id.gallery_button);
-        this.cameraButton = (LinearLayout) this.view.findViewById(R.id.camera_button);
-        this.moreAppsButton = (LinearLayout) this.view.findViewById(R.id.more_apps_button);
-        this.rateButton = (LinearLayout) this.view.findViewById(R.id.rate_us_button);
-        this.likeUsButton = (LinearLayout) this.view.findViewById(R.id.like_us_button);
-        this.fbShareButton = (LinearLayout) this.view.findViewById(R.id.fb_share_button);
-        this.purchaseButton = (RelativeLayout) this.view.findViewById(R.id.purchase_button);
-        this.ad_button = (RelativeLayout) this.view.findViewById(R.id.remove_ads_button);
+        this.galleryButton = (Button) this.view.findViewById(R.id.gallery_button);
+        this.cameraButton = (Button) this.view.findViewById(R.id.camera_button);
+        this.moreAppsButton = (Button) this.view.findViewById(R.id.more_apps_button);
+        this.rateButton = (Button) this.view.findViewById(R.id.rate_us_button);
+        this.likeUsButton = (Button) this.view.findViewById(R.id.like_us_button);
+        this.fbShareButton = (Button) this.view.findViewById(R.id.fb_share_button);
+        this.purchaseButton = (Button) this.view.findViewById(R.id.purchase_button);
+        this.ad_button = (Button) this.view.findViewById(R.id.remove_ads_button);
         this.removeAdsText = (TextView) this.view.findViewById(R.id.remove_ads_text);
         this.purchaseButtonText = (TextView) this.view.findViewById(R.id.purchase_button_text);
         TextView textView = this.purchaseButtonText;

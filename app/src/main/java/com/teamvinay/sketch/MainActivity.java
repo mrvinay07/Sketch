@@ -1223,7 +1223,7 @@ public class MainActivity extends AppCompatActivity implements ReplaceFragmentLi
             this.selected = Uri.fromFile(file2);
         }
         intent.putExtra("output", this.selected);
-        intent.addFlags(intent.FILL_IN_ACTION);
+        intent.addFlags(FILL_IN_ACTION);
         startActivityForResult(intent, CAMERA_REQUEST);
         this.file = new File(file2.getPath());
     }

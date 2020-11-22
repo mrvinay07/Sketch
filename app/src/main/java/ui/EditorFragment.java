@@ -501,13 +501,13 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
     public void onSeeking(SeekParams seekParams) {
         if (seekParams.seekBar.getId() == R.id.seek_1) {
             this.filterValueList.get(0).setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
-        } else if (seekParams.seekBar.getId() == C3674R.C3676id.seek_2) {
+        } else if (seekParams.seekBar.getId() == R.id.seek_2) {
             this.filterValueList.get(1).setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
-        } else if (seekParams.seekBar.getId() == C3674R.C3676id.seek_3) {
+        } else if (seekParams.seekBar.getId() == R.id.seek_3) {
             this.filterValueList.get(2).setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
-        } else if (seekParams.seekBar.getId() == C3674R.C3676id.seek_4) {
+        } else if (seekParams.seekBar.getId() == R.id.seek_4) {
             this.filterValueList.get(3).setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
-        } else if (seekParams.seekBar.getId() == C3674R.C3676id.seek_5) {
+        } else if (seekParams.seekBar.getId() == R.id.seek_5) {
             this.filterValueList.get(4).setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
         } else {
             this.filter_value.setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
@@ -1835,13 +1835,13 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
                 if (!Constants.FULL_SCREEN_Effect_NATIVE_FIRST) {
                     if (AdUtil.getInstance().isEffectInterstitialLoaded()) {
                         AdUtil.getInstance().ShowEffectInterstitial();
-                    } else if (AdUtil.getInstance().isEffectNativeLoaded() && AdUtil.getInstance().getEffect_fb_native() != null) {
+                    } /*else if (AdUtil.getInstance().isEffectNativeLoaded() && AdUtil.getInstance().getEffect_fb_native() != null) {
                         ((MainActivity) getActivity()).showFloatingFBNativeAd(AdUtil.getInstance().getEffect_fb_native(), false);
                     }
                 } else if (AdUtil.getInstance().isEffectNativeLoaded()) {
                     if (AdUtil.getInstance().getEffect_fb_native() != null) {
                         ((MainActivity) getActivity()).showFloatingFBNativeAd(AdUtil.getInstance().getEffect_fb_native(), false);
-                    }
+                    }*/
                 } else if (AdUtil.getInstance().isEffectInterstitialLoaded()) {
                     AdUtil.getInstance().ShowEffectInterstitial();
                 }
@@ -1917,13 +1917,13 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
             if (i6 == 0) {
                 textView3.setId(R.id.filter_value_1);
             } else if (i6 == i4) {
-                textView3.setId(C3674R.C3676id.filter_value_2);
+                textView3.setId(R.id.filter_value_2);
             } else if (i6 == 2) {
-                textView3.setId(C3674R.C3676id.filter_value_3);
+                textView3.setId(R.id.filter_value_3);
             } else if (i6 == 3) {
-                textView3.setId(C3674R.C3676id.filter_value_4);
+                textView3.setId(R.id.filter_value_4);
             } else if (i6 == 4) {
-                textView3.setId(C3674R.C3676id.filter_value_5);
+                textView3.setId(R.id.filter_value_5);
             }
             textView3.setTextColor(Color.parseColor("#FFFFFF"));
             if (Build.VERSION.SDK_INT < 16) {
@@ -1940,15 +1940,15 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
             textView3.setLayoutParams(layoutParams6);
             IndicatorSeekBar build = IndicatorSeekBar.with(getActivity()).min(0.0f).max(100.0f).progress(50.0f).showIndicatorType(0).thumbColor(Color.parseColor("#ffffff")).thumbSize(15).onlyThumbDraggable(false).trackProgressColor(Color.parseColor("#ffffff")).trackProgressSize(4).trackBackgroundColor(Color.parseColor("#333333")).trackBackgroundSize(2).build();
             if (i6 == 0) {
-                build.setId(C3674R.C3676id.seek_1);
+                build.setId(R.id.seek_1);
             } else if (i6 == 1) {
-                build.setId(C3674R.C3676id.seek_2);
+                build.setId(R.id.seek_2);
             } else if (i6 == 2) {
-                build.setId(C3674R.C3676id.seek_3);
+                build.setId(R.id.seek_3);
             } else if (i6 == 3) {
-                build.setId(C3674R.C3676id.seek_4);
+                build.setId(R.id.seek_4);
             } else if (i6 == 4) {
-                build.setId(C3674R.C3676id.seek_5);
+                build.setId(R.id.seek_5);
             }
             TextView textView4 = new TextView(getActivity());
             layoutParams4.setMargins(((PhotoActivity) getActivity()).dpToPx(10), ((PhotoActivity) getActivity()).dpToPx(5), 0, 0);
@@ -1988,7 +1988,7 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
                     textView4.setText("-2");
                     textView5.setText("1");
                     textView3.setText(String.valueOf(AppEventsConstants.EVENT_PARAM_VALUE_NO));
-                } else if (build.getId() == C3674R.C3676id.seek_2) {
+                } else if (build.getId() == R.id.seek_2) {
                     build.setMax(200.0f);
                     build.setMin(-100.0f);
                     textView4.setText("-1");
@@ -2000,7 +2000,7 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
                 build.setMin(-100.0f);
                 build.setProgress(15.0f);
             } else if (enhanceFilters.getFilterTitle().equals("White Balance")) {
-                if (build.getId() == C3674R.C3676id.seek_1) {
+                if (build.getId() == R.id.seek_1) {
                     build.setMax(100.0f);
                     build.setMin(-100.0f);
                     textView3.setText(String.valueOf(AppEventsConstants.EVENT_PARAM_VALUE_NO));

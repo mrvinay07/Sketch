@@ -1159,13 +1159,13 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
                             ApplyFilter(false);
                         }
                     } else if (visibility2 == 4 || visibility2 == 8) {
-                        if (this.optionLayout.getVisibility() == 0) {
-                            this.optionLayout.setVisibility(8);
+                        if (this.optionLayout.getVisibility() == View.VISIBLE) {
+                            this.optionLayout.setVisibility(View.GONE);
                         }
-                        if (this.seekBar_view.getVisibility() == 0) {
-                            this.seekBar_view.setVisibility(8);
+                        if (this.seekBar_view.getVisibility() == View.VISIBLE) {
+                            this.seekBar_view.setVisibility(View.GONE);
                         }
-                        this.pager.setVisibility(0);
+                        this.pager.setVisibility(View.VISIBLE);
                         this.pager.setCurrentItem(1);
                         showMessage("Filter", "INVisible");
                         if (!this.effect_selected) {
@@ -2974,13 +2974,13 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
                 if (!Constants.FULL_SCREEN_Effect_NATIVE_FIRST) {
                     if (AdUtil.getInstance().isEffectInterstitialLoaded()) {
                         AdUtil.getInstance().ShowEffectInterstitial();
-                    } else if (AdUtil.getInstance().isEffectNativeLoaded() && AdUtil.getInstance().getEffect_fb_native() != null) {
+                    } /*else if (AdUtil.getInstance().isEffectNativeLoaded() && AdUtil.getInstance().getEffect_fb_native() != null) {
                         ((MainActivity) getActivity()).showFloatingFBNativeAd(AdUtil.getInstance().getEffect_fb_native(), false);
                     }
                 } else if (AdUtil.getInstance().isEffectNativeLoaded()) {
                     if (AdUtil.getInstance().getEffect_fb_native() != null) {
                         ((MainActivity) getActivity()).showFloatingFBNativeAd(AdUtil.getInstance().getEffect_fb_native(), false);
-                    }
+                    }*/
                 } else if (AdUtil.getInstance().isEffectInterstitialLoaded()) {
                     AdUtil.getInstance().ShowEffectInterstitial();
                 }

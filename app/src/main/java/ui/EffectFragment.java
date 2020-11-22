@@ -812,13 +812,13 @@ public class EffectFragment extends Fragment implements RecyclerViewClickListene
                 if (!Constants.FULL_SCREEN_Effect_NATIVE_FIRST) {
                     if (AdUtil.getInstance().isEffectInterstitialLoaded()) {
                         AdUtil.getInstance().ShowEffectInterstitial();
-                    } else if (AdUtil.getInstance().isEffectNativeLoaded() && AdUtil.getInstance().getEffect_fb_native() != null) {
+                    } /*else if (AdUtil.getInstance().isEffectNativeLoaded() && AdUtil.getInstance().getEffect_fb_native() != null) {
                         ((MainActivity) getActivity()).showFloatingFBNativeAd(AdUtil.getInstance().getEffect_fb_native(), false);
                     }
                 } else if (AdUtil.getInstance().isEffectNativeLoaded()) {
                     if (AdUtil.getInstance().getEffect_fb_native() != null) {
                         ((MainActivity) getActivity()).showFloatingFBNativeAd(AdUtil.getInstance().getEffect_fb_native(), false);
-                    }
+                    }*/
                 } else if (AdUtil.getInstance().isEffectInterstitialLoaded()) {
                     AdUtil.getInstance().ShowEffectInterstitial();
                 }
