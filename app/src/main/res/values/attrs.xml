@@ -6,9 +6,9 @@
     </attr>
     <attr name="actionBarPopupTheme" format="reference">
     </attr>
-    <attr name="actionBarSize" format="dimension">
+   <!-- <attr name="actionBarSize" format="dimension">
         <enum name="wrap_content" value="0" />
-    </attr>
+    </attr>-->
     <attr name="actionBarSplitStyle" format="reference">
     </attr>
     <attr name="actionBarStyle" format="reference">
@@ -87,14 +87,14 @@
     </attr>
     <attr name="alpha" format="float">
     </attr>
-    <attr name="alphabeticModifiers">
+    <!--<attr name="alphabeticModifiers">
         <flag name="ALT" value="2" />
         <flag name="CTRL" value="4096" />
         <flag name="FUNCTION" value="8" />
         <flag name="META" value="65536" />
         <flag name="SHIFT" value="1" />
         <flag name="SYM" value="4" />
-    </attr>
+    </attr>-->
     <attr name="arrowHeadLength" format="dimension">
     </attr>
     <attr name="arrowShaftLength" format="dimension">
@@ -109,10 +109,10 @@
     </attr>
     <attr name="autoSizeStepGranularity" format="dimension">
     </attr>
-    <attr name="autoSizeTextType">
+   <!-- <attr name="autoSizeTextType">
         <enum name="none" value="0" />
         <enum name="uniform" value="1" />
-    </attr>
+    </attr>-->
     <attr name="background" format="reference">
     </attr>
     <attr name="backgroundSplit" format="reference|color">
@@ -121,14 +121,14 @@
     </attr>
     <attr name="backgroundTint" format="color">
     </attr>
-    <attr name="backgroundTintMode">
+    <!--<attr name="backgroundTintMode">
         <enum name="add" value="16" />
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="barLength" format="dimension">
     </attr>
     <attr name="barrierAllowsGoneWidgets" format="boolean">
@@ -149,9 +149,9 @@
     </attr>
     <attr name="behavior_overlapTop" format="dimension">
     </attr>
-    <attr name="behavior_peekHeight" format="dimension">
+   <!-- <attr name="behavior_peekHeight" format="dimension">
         <enum name="auto" value="-1" />
-    </attr>
+    </attr>-->
     <attr name="behavior_skipCollapsed" format="boolean">
     </attr>
     <attr name="borderRadius" format="dimension">
@@ -170,11 +170,11 @@
     </attr>
     <attr name="boxBackgroundColor" format="color">
     </attr>
-    <attr name="boxBackgroundMode">
+   <!-- <attr name="boxBackgroundMode">
         <enum name="filled" value="1" />
         <enum name="none" value="0" />
         <enum name="outline" value="2" />
-    </attr>
+    </attr>-->
     <attr name="boxCollapsedPaddingTop" format="dimension">
     </attr>
     <attr name="boxCornerRadiusBottomEnd" format="dimension">
@@ -201,34 +201,34 @@
     </attr>
     <attr name="buttonCompat" format="reference">
     </attr>
-    <attr name="buttonGravity">
+   <!-- <attr name="buttonGravity">
         <flag name="bottom" value="80" />
         <flag name="center_vertical" value="16" />
         <flag name="top" value="48" />
-    </attr>
+    </attr>-->
     <attr name="buttonIconDimen" format="dimension">
     </attr>
     <attr name="buttonPanelSideLayout" format="reference">
     </attr>
-    <attr name="buttonSize" format="reference">
+  <!--  <attr name="buttonSize" format="reference">
         <enum name="icon_only" value="2" />
         <enum name="standard" value="0" />
         <enum name="wide" value="1" />
-    </attr>
+    </attr>-->
     <attr name="buttonStyle" format="reference">
     </attr>
     <attr name="buttonStyleSmall" format="reference">
     </attr>
     <attr name="buttonTint" format="color">
     </attr>
-    <attr name="buttonTintMode">
+  <!--  <attr name="buttonTintMode">
         <enum name="add" value="16" />
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="camera_id" format="integer">
         <enum name="any" value="-1" />
         <enum name="back" value="99" />
@@ -326,7 +326,7 @@
     </attr>
     <attr name="collapseIcon" format="reference">
     </attr>
-    <attr name="collapsedTitleGravity">
+   <!-- <attr name="collapsedTitleGravity">
         <flag name="bottom" value="80" />
         <flag name="center" value="17" />
         <flag name="center_horizontal" value="1" />
@@ -337,7 +337,7 @@
         <flag name="right" value="5" />
         <flag name="start" value="8388611" />
         <flag name="top" value="48" />
-    </attr>
+    </attr>-->
     <attr name="collapsedTitleTextAppearance" format="reference">
     </attr>
     <attr name="color" format="color">
@@ -360,29 +360,29 @@
     </attr>
     <attr name="colorPrimaryDark" format="color">
     </attr>
-    <attr name="colorScheme" format="reference">
+  <!--  <attr name="colorScheme" format="reference">
         <enum name="auto" value="2" />
         <enum name="dark" value="0" />
         <enum name="light" value="1" />
-    </attr>
+    </attr>-->
     <attr name="colorSecondary" format="color">
     </attr>
     <attr name="colorSwitchThumbNormal" format="color">
     </attr>
-    <attr name="com_facebook_auxiliary_view_position">
+  <!--  <attr name="com_facebook_auxiliary_view_position">
         <enum name="bottom" value="0" />
         <enum name="inline" value="1" />
         <enum name="top" value="2" />
-    </attr>
+    </attr>-->
     <attr name="com_facebook_confirm_logout" format="boolean">
     </attr>
     <attr name="com_facebook_foreground_color" format="color">
     </attr>
-    <attr name="com_facebook_horizontal_alignment">
+   <!-- <attr name="com_facebook_horizontal_alignment">
         <enum name="center" value="0" />
         <enum name="left" value="1" />
         <enum name="right" value="2" />
-    </attr>
+    </attr>-->
     <attr name="com_facebook_is_cropped" format="boolean">
     </attr>
     <attr name="com_facebook_login_text" format="string">
@@ -391,26 +391,26 @@
     </attr>
     <attr name="com_facebook_object_id" format="string">
     </attr>
-    <attr name="com_facebook_object_type">
+   <!-- <attr name="com_facebook_object_type">
         <enum name="open_graph" value="1" />
         <enum name="page" value="2" />
         <enum name="unknown" value="0" />
-    </attr>
-    <attr name="com_facebook_preset_size">
+    </attr>-->
+  <!--  <attr name="com_facebook_preset_size">
         <enum name="large" value="-4" />
         <enum name="normal" value="-3" />
         <enum name="small" value="-2" />
-    </attr>
-    <attr name="com_facebook_style">
+    </attr>-->
+  <!--  <attr name="com_facebook_style">
         <enum name="box_count" value="2" />
         <enum name="button" value="1" />
         <enum name="standard" value="0" />
-    </attr>
-    <attr name="com_facebook_tooltip_mode">
+    </attr>-->
+    <!--<attr name="com_facebook_tooltip_mode">
         <enum name="automatic" value="0" />
         <enum name="display_always" value="1" />
         <enum name="never_display" value="2" />
-    </attr>
+    </attr>-->
     <attr name="commitIcon" format="reference">
     </attr>
     <attr name="constraintSet" format="reference">
@@ -471,7 +471,7 @@
     </attr>
     <attr name="discreteSeekBarStyle" format="reference">
     </attr>
-    <attr name="displayOptions">
+   <!-- <attr name="displayOptions">
         <flag name="disableHome" value="32" />
         <flag name="homeAsUp" value="4" />
         <flag name="none" value="0" />
@@ -479,7 +479,7 @@
         <flag name="showHome" value="2" />
         <flag name="showTitle" value="8" />
         <flag name="useLogo" value="1" />
-    </attr>
+    </attr>-->
     <attr name="divider" format="reference">
     </attr>
     <attr name="dividerHorizontal" format="reference">
@@ -502,14 +502,14 @@
     </attr>
     <attr name="drawableTint" format="color">
     </attr>
-    <attr name="drawableTintMode">
+   <!-- <attr name="drawableTintMode">
         <enum name="add" value="16" />
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="drawableTopCompat" format="reference">
     </attr>
     <attr name="drawerArrowStyle" format="reference">
@@ -578,7 +578,7 @@
     </attr>
     <attr name="expanded" format="boolean">
     </attr>
-    <attr name="expandedTitleGravity">
+   <!-- <attr name="expandedTitleGravity">
         <flag name="bottom" value="80" />
         <flag name="center" value="17" />
         <flag name="center_horizontal" value="1" />
@@ -589,7 +589,7 @@
         <flag name="right" value="5" />
         <flag name="start" value="8388611" />
         <flag name="top" value="48" />
-    </attr>
+    </attr>-->
     <attr name="expandedTitleMargin" format="dimension">
     </attr>
     <attr name="expandedTitleMarginBottom" format="dimension">
@@ -602,10 +602,10 @@
     </attr>
     <attr name="expandedTitleTextAppearance" format="reference">
     </attr>
-    <attr name="fabAlignmentMode">
+   <!-- <attr name="fabAlignmentMode">
         <enum name="center" value="0" />
         <enum name="end" value="1" />
-    </attr>
+    </attr>-->
     <attr name="fabCradleMargin" format="dimension">
     </attr>
     <attr name="fabCradleRoundedCornerRadius" format="dimension">
@@ -614,11 +614,11 @@
     </attr>
     <attr name="fabCustomSize" format="dimension">
     </attr>
-    <attr name="fabSize">
+   <!-- <attr name="fabSize">
         <enum name="auto" value="-1" />
         <enum name="mini" value="1" />
         <enum name="normal" value="0" />
-    </attr>
+    </attr>-->
     <attr name="fab_addButtonColorNormal" format="color">
     </attr>
     <attr name="fab_addButtonColorPressed" format="color">
@@ -683,21 +683,21 @@
     </attr>
     <attr name="fontProviderCerts" format="reference">
     </attr>
-    <attr name="fontProviderFetchStrategy">
+  <!--  <attr name="fontProviderFetchStrategy">
         <enum name="async" value="1" />
         <enum name="blocking" value="0" />
-    </attr>
-    <attr name="fontProviderFetchTimeout" format="integer">
+    </attr>-->
+    <!--<attr name="fontProviderFetchTimeout" format="integer">
         <enum name="forever" value="-1" />
-    </attr>
+    </attr>-->
     <attr name="fontProviderPackage" format="string">
     </attr>
     <attr name="fontProviderQuery" format="string">
     </attr>
-    <attr name="fontStyle">
+   <!-- <attr name="fontStyle">
         <enum name="italic" value="1" />
         <enum name="normal" value="0" />
-    </attr>
+    </attr>-->
     <attr name="fontVariationSettings" format="string">
     </attr>
     <attr name="fontWeight" format="integer">
@@ -740,10 +740,10 @@
     </attr>
     <attr name="iconEndPadding" format="dimension">
     </attr>
-    <attr name="iconGravity">
+  <!--  <attr name="iconGravity">
         <flag name="start" value="1" />
         <flag name="textStart" value="2" />
-    </attr>
+    </attr>-->
     <attr name="iconPadding" format="dimension">
     </attr>
     <attr name="iconSize" format="dimension">
@@ -752,23 +752,23 @@
     </attr>
     <attr name="iconTint" format="color">
     </attr>
-    <attr name="iconTintMode">
+    <!--<attr name="iconTintMode">
         <enum name="add" value="16" />
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="iconifiedByDefault" format="boolean">
     </attr>
     <attr name="imageAspectRatio" format="float">
     </attr>
-    <attr name="imageAspectRatioAdjust">
+   <!-- <attr name="imageAspectRatioAdjust">
         <enum name="adjust_height" value="2" />
         <enum name="adjust_width" value="1" />
         <enum name="none" value="0" />
-    </attr>
+    </attr>-->
     <attr name="imageButtonStyle" format="reference">
     </attr>
     <attr name="indeterminateProgressStyle" format="reference">
@@ -809,21 +809,21 @@
     </attr>
     <attr name="isb_seek_smoothly" format="boolean">
     </attr>
-    <attr name="isb_show_indicator">
+   <!-- <attr name="isb_show_indicator">
         <enum name="circular_bubble" value="1" />
         <enum name="custom" value="4" />
         <enum name="none" value="0" />
         <enum name="rectangle" value="3" />
         <enum name="rounded_rectangle" value="2" />
-    </attr>
+    </attr>-->
     <attr name="isb_show_thumb_text" format="boolean">
     </attr>
-    <attr name="isb_show_tick_marks_type">
+    <!--<attr name="isb_show_tick_marks_type">
         <enum name="divider" value="3" />
         <enum name="none" value="0" />
         <enum name="oval" value="1" />
         <enum name="square" value="2" />
-    </attr>
+    </attr>-->
     <attr name="isb_show_tick_texts" format="boolean">
     </attr>
     <attr name="isb_thumb_adjust_auto" format="boolean">
@@ -852,12 +852,12 @@
     </attr>
     <attr name="isb_tick_texts_size" format="reference|dimension">
     </attr>
-    <attr name="isb_tick_texts_typeface">
+   <!-- <attr name="isb_tick_texts_typeface">
         <enum name="monospace" value="1" />
         <enum name="normal" value="0" />
         <enum name="sans" value="2" />
         <enum name="serif" value="3" />
-    </attr>
+    </attr>-->
     <attr name="isb_ticks_count" format="integer">
     </attr>
     <attr name="isb_track_background_color" format="reference|color">
@@ -898,12 +898,12 @@
     </attr>
     <attr name="keylines" format="reference">
     </attr>
-    <attr name="labelVisibilityMode">
+   <!-- <attr name="labelVisibilityMode">
         <enum name="auto" value="-1" />
         <enum name="labeled" value="1" />
         <enum name="selected" value="0" />
         <enum name="unlabeled" value="2" />
-    </attr>
+    </attr>-->
     <attr name="lastBaselineToBottomHeight" format="dimension">
     </attr>
     <attr name="layout" format="reference">
@@ -912,7 +912,7 @@
     </attr>
     <attr name="layout_anchor" format="reference">
     </attr>
-    <attr name="layout_anchorGravity">
+    <!--<attr name="layout_anchorGravity">
         <flag name="bottom" value="80" />
         <flag name="center" value="17" />
         <flag name="center_horizontal" value="1" />
@@ -927,14 +927,14 @@
         <flag name="right" value="5" />
         <flag name="start" value="8388611" />
         <flag name="top" value="48" />
-    </attr>
+    </attr>-->
     <attr name="layout_behavior" format="string">
     </attr>
-    <attr name="layout_collapseMode">
+  <!--  <attr name="layout_collapseMode">
         <enum name="none" value="0" />
         <enum name="parallax" value="2" />
         <enum name="pin" value="1" />
-    </attr>
+    </attr>-->
     <attr name="layout_collapseParallaxMultiplier" format="float">
     </attr>
     <attr name="layout_constrainedHeight" format="boolean">
@@ -1048,7 +1048,7 @@
     </attr>
     <attr name="layout_constraintWidth_percent" format="float">
     </attr>
-    <attr name="layout_dodgeInsetEdges">
+  <!--  <attr name="layout_dodgeInsetEdges">
         <flag name="all" value="119" />
         <flag name="bottom" value="80" />
         <flag name="end" value="8388613" />
@@ -1057,7 +1057,7 @@
         <flag name="right" value="5" />
         <flag name="start" value="8388611" />
         <flag name="top" value="48" />
-    </attr>
+    </attr>-->
     <attr name="layout_editor_absoluteX" format="dimension">
     </attr>
     <attr name="layout_editor_absoluteY" format="dimension">
@@ -1074,7 +1074,7 @@
     </attr>
     <attr name="layout_goneMarginTop" format="dimension">
     </attr>
-    <attr name="layout_insetEdge">
+  <!--  <attr name="layout_insetEdge">
         <enum name="bottom" value="80" />
         <enum name="end" value="8388613" />
         <enum name="left" value="3" />
@@ -1082,7 +1082,7 @@
         <enum name="right" value="5" />
         <enum name="start" value="8388611" />
         <enum name="top" value="48" />
-    </attr>
+    </attr>-->
     <attr name="layout_keyline" format="integer">
     </attr>
     <attr name="layout_optimizationLevel">
@@ -1094,14 +1094,14 @@
         <flag name="none" value="0" />
         <flag name="standard" value="7" />
     </attr>
-    <attr name="layout_scrollFlags">
+   <!-- <attr name="layout_scrollFlags">
         <flag name="enterAlways" value="4" />
         <flag name="enterAlwaysCollapsed" value="8" />
         <flag name="exitUntilCollapsed" value="2" />
         <flag name="scroll" value="1" />
         <flag name="snap" value="16" />
         <flag name="snapMargins" value="32" />
-    </attr>
+    </attr>-->
     <attr name="layout_scrollInterpolator" format="reference">
     </attr>
     <attr name="liftOnScroll" format="boolean">
@@ -1170,34 +1170,34 @@
     </attr>
     <attr name="minWidth" format="dimension">
     </attr>
-    <attr name="moPubAdSize">
+   <!-- <attr name="moPubAdSize">
         <enum name="height_250" value="250" />
         <enum name="height_280" value="280" />
         <enum name="height_50" value="50" />
         <enum name="height_90" value="90" />
         <enum name="match_view" value="-1" />
-    </attr>
+    </attr>-->
     <attr name="multiChoiceItemLayout" format="reference">
     </attr>
     <attr name="navigationContentDescription" format="string">
     </attr>
     <attr name="navigationIcon" format="reference">
     </attr>
-    <attr name="navigationMode">
+   <!-- <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
         <enum name="tabMode" value="2" />
-    </attr>
+    </attr>-->
     <attr name="navigationViewStyle" format="reference">
     </attr>
-    <attr name="numericModifiers">
+   <!-- <attr name="numericModifiers">
         <flag name="ALT" value="2" />
         <flag name="CTRL" value="4096" />
         <flag name="FUNCTION" value="8" />
         <flag name="META" value="65536" />
         <flag name="SHIFT" value="1" />
         <flag name="SYM" value="4" />
-    </attr>
+    </attr>-->
     <attr name="overlapAnchor" format="boolean">
     </attr>
     <attr name="paddingBottomNoButtons" format="dimension">
@@ -1222,13 +1222,13 @@
     </attr>
     <attr name="passwordToggleTint" format="color">
     </attr>
-    <attr name="passwordToggleTintMode">
+  <!--  <attr name="passwordToggleTintMode">
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="popupMenuStyle" format="reference">
     </attr>
     <attr name="popupTheme" format="reference">
@@ -1283,19 +1283,19 @@
     </attr>
     <attr name="separatorVisible" format="boolean">
     </attr>
-    <attr name="showAsAction">
+   <!-- <attr name="showAsAction">
         <flag name="always" value="2" />
         <flag name="collapseActionView" value="8" />
         <flag name="ifRoom" value="1" />
         <flag name="never" value="0" />
         <flag name="withText" value="4" />
-    </attr>
-    <attr name="showDividers">
+    </attr>-->
+    <!--<attr name="showDividers">
         <flag name="beginning" value="1" />
         <flag name="end" value="4" />
         <flag name="middle" value="2" />
         <flag name="none" value="0" />
-    </attr>
+    </attr>-->
     <attr name="showMotionSpec" format="reference">
     </attr>
     <attr name="showText" format="boolean">
@@ -1398,20 +1398,20 @@
     </attr>
     <attr name="tabContentStart" format="dimension">
     </attr>
-    <attr name="tabGravity">
+   <!-- <attr name="tabGravity">
         <enum name="center" value="1" />
         <enum name="fill" value="0" />
-    </attr>
+    </attr>-->
     <attr name="tabIconTint" format="color">
     </attr>
-    <attr name="tabIconTintMode">
+   <!-- <attr name="tabIconTintMode">
         <enum name="add" value="16" />
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="tabIndicator" format="reference">
     </attr>
     <attr name="tabIndicatorAnimationDuration" format="integer">
@@ -1420,12 +1420,12 @@
     </attr>
     <attr name="tabIndicatorFullWidth" format="boolean">
     </attr>
-    <attr name="tabIndicatorGravity">
+  <!--  <attr name="tabIndicatorGravity">
         <enum name="bottom" value="0" />
         <enum name="center" value="1" />
         <enum name="stretch" value="3" />
         <enum name="top" value="2" />
-    </attr>
+    </attr>-->
     <attr name="tabIndicatorHeight" format="dimension">
     </attr>
     <attr name="tabInlineLabel" format="boolean">
@@ -1434,10 +1434,10 @@
     </attr>
     <attr name="tabMinWidth" format="dimension">
     </attr>
-    <attr name="tabMode">
+   <!-- <attr name="tabMode">
         <enum name="fixed" value="1" />
         <enum name="scrollable" value="0" />
-    </attr>
+    </attr>-->
     <attr name="tabPadding" format="dimension">
     </attr>
     <attr name="tabPaddingBottom" format="dimension">
@@ -1530,36 +1530,36 @@
     </attr>
     <attr name="thumbTint" format="color">
     </attr>
-    <attr name="thumbTintMode">
+   <!-- <attr name="thumbTintMode">
         <enum name="add" value="16" />
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="tickMark" format="reference">
     </attr>
     <attr name="tickMarkTint" format="color">
     </attr>
-    <attr name="tickMarkTintMode">
+    <!--<attr name="tickMarkTintMode">
         <enum name="add" value="16" />
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="tint" format="color">
     </attr>
-    <attr name="tintMode">
+  <!--  <attr name="tintMode">
         <enum name="add" value="16" />
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="title" format="string">
     </attr>
     <attr name="titleEnabled" format="boolean">
@@ -1604,14 +1604,14 @@
     </attr>
     <attr name="trackTint" format="color">
     </attr>
-    <attr name="trackTintMode">
+   <!-- <attr name="trackTintMode">
         <enum name="add" value="16" />
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
-    </attr>
+    </attr>-->
     <attr name="ttcIndex" format="integer">
     </attr>
     <attr name="txAdSize" format="string">
@@ -1664,10 +1664,10 @@
     </attr>
     <attr name="viewInflaterClass" format="string">
     </attr>
-    <attr name="viewType">
+   <!-- <attr name="viewType">
         <enum name="surfaceView" value="0" />
         <enum name="textureView" value="1" />
-    </attr>
+    </attr>-->
     <attr name="voiceIcon" format="reference">
     </attr>
     <attr name="windowActionBar" format="boolean">

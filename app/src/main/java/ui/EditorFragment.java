@@ -2006,7 +2006,7 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
                     textView3.setText(String.valueOf(AppEventsConstants.EVENT_PARAM_VALUE_NO));
                     textView4.setText("-1");
                     textView5.setText("1");
-                } else if (build.getId() == C3674R.C3676id.seek_2) {
+                } else if (build.getId() == R.id.seek_2) {
                     build.setMax(500.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);
@@ -2015,35 +2015,35 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
                     textView5.setText("5");
                 }
             } else if (enhanceFilters.getFilterTitle().equals("Haze")) {
-                if (build.getId() == C3674R.C3676id.seek_1) {
+                if (build.getId() == R.id.seek_1) {
                     build.setMax(50.0f);
                     build.setMin(-50.0f);
                     build.setProgress(0.0f);
                     textView3.setText(String.valueOf(AppEventsConstants.EVENT_PARAM_VALUE_NO));
                     textView4.setText("-0.5");
                     textView5.setText("0.5");
-                } else if (build.getId() == C3674R.C3676id.seek_2) {
+                } else if (build.getId() == R.id.seek_2) {
                     build.setMax(50.0f);
                     build.setMin(-50.0f);
                     build.setProgress(0.0f);
                     textView3.setText(String.valueOf(AppEventsConstants.EVENT_PARAM_VALUE_NO));
                     textView4.setText("-0.5");
                     textView5.setText("0.5");
-                } else if (build.getId() == C3674R.C3676id.seek_3) {
+                } else if (build.getId() == R.id.seek_3) {
                     build.setMax(100.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);
                     textView3.setText(String.valueOf("1"));
                     textView4.setText(AppEventsConstants.EVENT_PARAM_VALUE_NO);
                     textView5.setText("1");
-                } else if (build.getId() == C3674R.C3676id.seek_4) {
+                } else if (build.getId() == R.id.seek_4) {
                     build.setMax(100.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);
                     textView3.setText(String.valueOf("1"));
                     textView4.setText(AppEventsConstants.EVENT_PARAM_VALUE_NO);
                     textView5.setText("1");
-                } else if (build.getId() == C3674R.C3676id.seek_5) {
+                } else if (build.getId() == R.id.seek_5) {
                     build.setMax(100.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);
@@ -2052,7 +2052,7 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
                     textView5.setText("1");
                 }
             } else if (enhanceFilters.getFilterTitle().equals("Emboss")) {
-                if (build.getId() == C3674R.C3676id.seek_1) {
+                if (build.getId() == R.id.seek_1) {
                     build.setMax(100.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);

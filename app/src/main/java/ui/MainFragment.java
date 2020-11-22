@@ -21,10 +21,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
 import com.facebook.ads.AdIconView;
-import com.facebook.ads.AdOptionsView;
-import com.facebook.ads.C2435Ad;
+
+
 import com.facebook.ads.NativeAd;
-import com.facebook.ads.NativeAdLayout;
+
 import com.facebook.ads.NativeAdListener;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
@@ -36,7 +36,7 @@ import com.google.android.gms.ads.formats.UnifiedNativeAdView;
 import com.teamvinay.sketch.MainActivity;
 import com.mopub.common.MoPub;
 import com.mopub.common.logging.MoPubLog;
-import com.mopub.mobileads.facebookaudiencenetwork.BuildConfig;
+
 import com.mopub.nativeads.MoPubNative;
 import com.mopub.nativeads.MoPubStaticNativeAdRenderer;
 import com.mopub.nativeads.NativeErrorCode;
@@ -90,7 +90,7 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
     @Nullable
     NativeAd nativeAd;
     RelativeLayout nativeAdContainer;
-    NativeAdLayout nativeAdLayout;
+
     private RelativeLayout purchaseButton;
     private TextView purchaseButtonText;
     private LinearLayout rateButton;
@@ -156,7 +156,7 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
             }
             this.removeAdsText.setBackgroundColor(Color.parseColor("#3A3A38"));
             this.ad_button.setEnabled(false);
-        } else if (this.fbnativeAd != null) {
+        }/* else if (this.fbnativeAd != null) {
             inflateFBNative(this.fbnativeAd);
             Log.d("AdCustom", "inflate fb call");
         } else if (this.mopubNativeAd != null) {
@@ -178,7 +178,7 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
                     handler.postDelayed(this, 100);
                 }
             }, 100);
-        }
+        }*/
         if (Constants.HD_PACK_PURCHASED) {
             this.purchaseButtonText.setBackgroundColor(Color.parseColor("#3A3A38"));
             this.purchaseButton.setEnabled(false);
@@ -205,7 +205,7 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
 
     /* access modifiers changed from: private */
     public void populateUnifiedNativeAdView(UnifiedNativeAd unifiedNativeAd, UnifiedNativeAdView unifiedNativeAdView) {
-        this.screen_image.setVisibility(8);
+        this.screen_image.setVisibility(View.GONE);
         unifiedNativeAdView.setMediaView((MediaView) unifiedNativeAdView.findViewById(R.id.ad_media));
         unifiedNativeAdView.setHeadlineView(unifiedNativeAdView.findViewById(R.id.ad_headline));
         unifiedNativeAdView.setBodyView(unifiedNativeAdView.findViewById(R.id.ad_body));
@@ -270,7 +270,7 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
         super.onDetach();
     }
 
-    public void initializeAd() {
+  /*  public void initializeAd() {
         MoPubStaticNativeAdRenderer moPubStaticNativeAdRenderer = new MoPubStaticNativeAdRenderer(new ViewBinder.Builder(R.layout.main_screen_mopub_native_ad_layout).titleId(C3674R.C3676id.native_ad_title).mainImageId(C3674R.C3676id.native_ad_main_image).iconImageId(C3674R.C3676id.native_ad_icon_image).callToActionId(C3674R.C3676id.native_ad_call_to_action).privacyInformationIconImageId(C3674R.C3676id.native_ad_privacy_information_icon_image).build());
         this.builder = new AdLoader.Builder((Context) getActivity(), ADMOB_AD_UNIT_ID);
         this.builder.forUnifiedNativeAd(new UnifiedNativeAd.OnUnifiedNativeAdLoadedListener() {
@@ -329,18 +329,18 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
                         MainFragment.this.LoadMopubNative();
                     }
                 }
-            }
+            }*/
 
-            public void onAdLoaded(Ad ad) {
+          /*  public void onAdLoaded(Ad ad) {
                 if (MainFragment.this.nativeAd != null && MainFragment.this.nativeAd == ad) {
                     boolean unused = MainFragment.this.fbLoaded = true;
                     MainFragment.this.fbnativeAd = MainFragment.this.nativeAd;
                     if (!Constants.REMOVE_ADS) {
                         MainFragment.this.inflateFBNative(MainFragment.this.nativeAd);
-                        MainFragment.this.screen_image.setVisibility(8);
+                        MainFragment.this.screen_image.setVisibility(View.GONE);
                     }
                     Log.d("NativeADD ", "fb Native ad has  loaded.");
-                    Log.d(BuildConfig.NETWORK_NAME, "Native ad has not loaded.");
+                   // Log.d(BuildConfig.NETWORK_NAME, "Native ad has not loaded.");
                 }
             }
         });
@@ -352,9 +352,9 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
                 }
             }, 3500);
         }
-    }
+    }*/
 
-    public void checkNativeAdInitialized() {
+  /*  public void checkNativeAdInitialized() {
         new Handler().postDelayed(new Runnable() {
             public void run() {
                 if (MainFragment.this.nativeAdLayout.getChildCount() > 0 && MainFragment.this.fbnativeAd != null) {
@@ -370,9 +370,9 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
                 }
             }
         }, 3000);
-    }
+    }*/
 
-    public void inflateMopubNative(final com.mopub.nativeads.NativeAd nativeAd2) {
+  /*  public void inflateMopubNative(final com.mopub.nativeads.NativeAd nativeAd2) {
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
@@ -393,9 +393,9 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
                 }
             }
         }, 1500);
-    }
+    }*/
 
-    public void inflateFBNative(final NativeAd nativeAd2) {
+   /* public void inflateFBNative(final NativeAd nativeAd2) {
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
@@ -407,9 +407,9 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
             }
         }, 1500);
     }
-
+*/
     /* access modifiers changed from: private */
-    public void inflateAd(NativeAd nativeAd2) {
+ /*   public void inflateAd(NativeAd nativeAd2) {
         nativeAd2.unregisterView();
         int i = 0;
         this.adView = (RelativeLayout) LayoutInflater.from(getActivity()).inflate(R.layout.main_screen_fb_native_ad_layout, this.nativeAdLayout, false);
@@ -418,14 +418,14 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
         AdOptionsView adOptionsView = new AdOptionsView(getActivity(), nativeAd2, this.nativeAdLayout);
         linearLayout.removeAllViews();
         linearLayout.addView(adOptionsView, 0);
-        AdIconView adIconView = (AdIconView) this.adView.findViewById(C3674R.C3676id.native_ad_icon);
-        TextView textView = (TextView) this.adView.findViewById(C3674R.C3676id.native_ad_title);
-        com.facebook.ads.MediaView mediaView = (com.facebook.ads.MediaView) this.adView.findViewById(C3674R.C3676id.native_ad_media);
-        TextView textView2 = (TextView) this.adView.findViewById(C3674R.C3676id.native_ad_sponsored_label);
-        Button button = (Button) this.adView.findViewById(C3674R.C3676id.native_ad_call_to_action);
+        AdIconView adIconView = (AdIconView) this.adView.findViewById(R.id.native_ad_icon);
+        TextView textView = (TextView) this.adView.findViewById(R.id.native_ad_title);
+        com.facebook.ads.MediaView mediaView = (com.facebook.ads.MediaView) this.adView.findViewById(R.id.native_ad_media);
+        TextView textView2 = (TextView) this.adView.findViewById(R.id.native_ad_sponsored_label);
+        Button button = (Button) this.adView.findViewById(R.id.native_ad_call_to_action);
         textView.setText(nativeAd2.getAdvertiserName());
-        ((TextView) this.adView.findViewById(C3674R.C3676id.native_ad_body)).setText(nativeAd2.getAdBodyText());
-        ((TextView) this.adView.findViewById(C3674R.C3676id.native_ad_social_context)).setText(nativeAd2.getAdSocialContext());
+        ((TextView) this.adView.findViewById(R.id.native_ad_body)).setText(nativeAd2.getAdBodyText());
+        ((TextView) this.adView.findViewById(R.id.native_ad_social_context)).setText(nativeAd2.getAdSocialContext());
         if (!nativeAd2.hasCallToAction()) {
             i = 4;
         }
@@ -437,7 +437,7 @@ public class MainFragment extends Fragment implements SplashScreenGoneListener, 
         arrayList.add(button);
        // nativeAd2.registerViewForInteraction((View) this.adView, mediaView, (com.facebook.ads.MediaView) adIconView, (List<View>) arrayList);
         this.screen_image.setVisibility(View.GONE);
-    }
+    }*/
 
     public void OnSplashScreenGone() {
         this.fbShareButton.setOnClickListener(this);

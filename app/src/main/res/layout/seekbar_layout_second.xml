@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout" android:background="#80000d17" android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <TextView android:textColor="@color/colorWhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="Color Balance"/>
-    <RelativeLayout android:id="@+id/seek_bar_view_1" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="13dp" android:textColor="@color/colorWhite" android:id="@+id/filterName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="5dp" android:text="Brightness" android:layout_centerVertical="true"/>
-        <TextView android:textSize="13dp" android:textColor="@color/colorWhite" android:id="@+id/seek_progress_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="5dp" android:text="20%" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
-        <com.warkiz.widget.IndicatorSeekBar android:id="@+id/seek" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/seek_progress_value" android:layout_toRightOf="@+id/filterName" android:layout_centerVertical="true" app:isb_indicator_color="@color/colorDrakGrey" app:isb_indicator_text_color="@color/colorWhite" app:isb_indicator_text_size="15sp" app:isb_max="100" app:isb_min="0" app:isb_only_thumb_draggable="false" app:isb_seek_smoothly="true" app:isb_show_indicator="0" app:isb_thumb_color="@color/colorWhite" app:isb_thumb_size="15dp" app:isb_track_background_color="@color/colorDrakGrey" app:isb_track_background_size="2dp" app:isb_track_progress_color="@color/colorWhite" app:isb_track_progress_size="4dp"/>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:background="#80000d17"
+    android:padding="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="Color Balance"/>
+    <RelativeLayout
+        android:id="@+id/seek_bar_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:textSize="13dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/filterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:text="Brightness"
+            android:layout_centerVertical="true"/>
+        <TextView android:textSize="13dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/seek_progress_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:text="20%"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/seek_progress_value"
+            android:layout_toRightOf="@+id/filterName"
+            android:layout_centerVertical="true"
+            app:isb_indicator_color="@color/colorDrakGrey"
+            app:isb_indicator_text_color="@color/colorWhite"
+            app:isb_indicator_text_size="15sp"
+            app:isb_max="100" app:isb_min="0"
+            app:isb_only_thumb_draggable="false"
+            app:isb_seek_smoothly="true"
+            app:isb_show_indicator="rectangle"
+            app:isb_thumb_color="@color/colorWhite"
+            app:isb_thumb_size="15dp"
+            app:isb_track_background_color="@color/colorDrakGrey"
+            app:isb_track_background_size="2dp"
+            app:isb_track_progress_color="@color/colorWhite"
+            app:isb_track_progress_size="4dp"/>
     </RelativeLayout>
 </LinearLayout>

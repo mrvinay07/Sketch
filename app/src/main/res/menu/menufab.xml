@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
-    <item android:icon="0x7f080068" android:id="@+id/menu_attachment" android:title="Attachments"/>
-    <item android:icon="0x7f080068" android:id="@+id/menu_image" android:title="Images"/>
-    <item android:icon="0x7f080068" android:id="@+id/menu_place" android:title="Places"/>
-    <item android:icon="0x7f080068" android:id="@+id/menu_emoticon" android:title="Emoticon"/>
+    <item android:icon="@drawable/dialog_drawable" android:id="@+id/menu_attachment" android:title="Attachments"/>
+    <item android:icon="@drawable/dialog_drawable" android:id="@+id/menu_image" android:title="Images"/>
+    <item android:icon="@drawable/dialog_drawable" android:id="@+id/menu_place" android:title="Places"/>
+    <item android:icon="@drawable/dialog_drawable" android:id="@+id/menu_emoticon" android:title="Emoticon"/>
 </menu>

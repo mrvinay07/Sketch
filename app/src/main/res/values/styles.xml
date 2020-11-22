@@ -2356,4 +2356,10 @@
         <item name="android:layout_width">@dimen/ucrop_size_wrapper_rotate_button</item>
         <item name="android:layout_height">@dimen/ucrop_size_wrapper_rotate_button</item>
     </style>
+
+
+        <style name="TextAppearance.DeviceDefault.Medium" parent="TextAppearance.DeviceDefault.Medium" >
+        </style>
+
+
 </resources>

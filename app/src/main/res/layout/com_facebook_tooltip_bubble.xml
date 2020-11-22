@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
-    <RelativeLayout android:id="@+id/com_facebook_body_frame" android:background="0x7f08009f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/com_facebook_tooltip_bubble_view_top_pointer" android:layout_centerHorizontal="true">
-        <ImageView android:id="@+id/com_facebook_button_xout" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0800a2" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
-        <TextView android:id="@+id/com_facebook_tooltip_bubble_view_text_body" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/com_facebook_button_xout" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/tooltip_bubble_text"/>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/com_facebook_body_frame"
+        android:background="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/com_facebook_tooltip_bubble_view_top_pointer"
+        android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/com_facebook_button_xout"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_drawable"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+        <TextView android:id="@+id/com_facebook_tooltip_bubble_view_text_body"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/com_facebook_button_xout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/tooltip_bubble_text"/>
     </RelativeLayout>
-    <ImageView android:id="@+id/com_facebook_tooltip_bubble_view_top_pointer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-10dp" android:src="0x7f0800a1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
-    <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/com_facebook_tooltip_bubble_view_bottom_pointer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-13dp" android:src="0x7f0800a0" android:layout_below="@+id/com_facebook_body_frame" android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/com_facebook_tooltip_bubble_view_top_pointer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/dialog_drawable"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+        android:id="@+id/com_facebook_tooltip_bubble_view_bottom_pointer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-13dp"
+        android:src="@drawable/dialog_drawable"
+        android:layout_below="@+id/com_facebook_body_frame"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>

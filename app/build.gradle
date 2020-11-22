@@ -78,5 +78,5 @@ dependencies {
     implementation 'com.google.guava:guava:30.0-jre'
 
     compile 'com.instagram.igdiskcache:ig-disk-cache:1.0.0'
-
+    implementation 'com.google.firebase:firebase-inappmessaging-display:17.0.3'
 }
