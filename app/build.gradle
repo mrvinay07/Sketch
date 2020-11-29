@@ -1,15 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.1"
+    compileSdkVersion 29
+    //buildToolsVersion "30.0.1"
 
     defaultConfig {
         applicationId "com.teamvinay.sketch"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -20,6 +21,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    /*compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_8
+    }*/
 }
 
 dependencies {
@@ -34,7 +39,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:19.5.0'
     compile 'com.facebook.android:audience-network-sdk:4.99.1'
    // compile 'com.facebook.android:audience-network-sdk:6.+'
-    implementation('com.mopub:mopub-sdk:+@aar') {
+    implementation('com.mopub:mopub-sdk:5.15.0@aar') {
         transitive = true
     }
     // https://mvnrepository.com/artifact/org.openpnp/opencv
@@ -75,7 +80,8 @@ dependencies {
 
 
 // https://mvnrepository.com/artifact/com.google.guava/guava
-    implementation 'com.google.guava:guava:30.0-jre'
+    //implementation 'com.google.guava:guava:30.0-jre'
+    implementation 'com.google.guava:guava:23.5-android'
 
     compile 'com.instagram.igdiskcache:ig-disk-cache:1.0.0'
     implementation 'com.google.firebase:firebase-inappmessaging-display:17.0.3'

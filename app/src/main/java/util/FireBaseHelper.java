@@ -22,7 +22,7 @@ public class FireBaseHelper {
     public void initialize(Context context2) {
         this.context = context2;
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(context2);
-        mFirebaseAnalytics.setMinimumSessionDuration(20000);
+        //mFirebaseAnalytics.setMinimumSessionDuration(20000);
         mFirebaseAnalytics.setSessionTimeoutDuration(500);
         mFirebaseAnalytics.setAnalyticsCollectionEnabled(true);
     }

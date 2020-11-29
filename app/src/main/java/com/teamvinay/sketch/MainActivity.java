@@ -1843,7 +1843,9 @@ public class MainActivity extends AppCompatActivity implements ReplaceFragmentLi
         with.setInstallDays(0).setEventsTimes(0).setLaunchTimes(0);
         with.resetOnDismiss(true).resetOnFeedBackDeclined(true).resetOnRatingDeclined(true);
         with.setShowAppIcon(true);
-        if (!with.isDialogPrompted()) {
+        //if (!with.isDialogPrompted()) {
+        if (with.ratePromptDialog != null &&
+                !with.getRatePromptDialog(this, with.ratePromptDialog, 3).isShowing()) {
             with.showIfMeetsConditions();
         } else {
             String packageName = getPackageName();

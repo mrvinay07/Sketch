@@ -1313,9 +1313,8 @@ public class ExportActivity extends Activity implements ExportOptionListener, Vi
         final TextView textView3 = textView;
         final Button button3 = button;
         Dialog dialog2 = dialog;
-        C36304 r9 = r0;
         final Button button4 = button2;
-        C36304 r0 = new BaseRatingBar.OnRatingChangeListener() {
+        BaseRatingBar.OnRatingChangeListener r0 = new BaseRatingBar.OnRatingChangeListener() {
             public void onRatingChange(BaseRatingBar baseRatingBar, float f, boolean z) {
                 if (f >= 4.0f) {
                     try {
@@ -1345,6 +1344,8 @@ public class ExportActivity extends Activity implements ExportOptionListener, Vi
                 FireBaseHelper.getInstance().LogEvent("Rate_Analytics", bundle2);
             }
         };
+        BaseRatingBar.OnRatingChangeListener r9 = r0;
+
         scaleRatingBar.setOnRatingChangeListener(r9);
         if (Constants.CUSTOM_EXPORT_RATE_DIALOG_TITLE_TEXT == null || Constants.CUSTOM_EXPORT_RATE_DIALOG_TITLE_TEXT.equals("null")) {
             textView2.setText(R.string.app_name);
@@ -1400,9 +1401,9 @@ public class ExportActivity extends Activity implements ExportOptionListener, Vi
         final ScaleRatingBar scaleRatingBar2 = scaleRatingBar;
         final LinearLayout linearLayout3 = linearLayout;
         final Button button6 = button2;
-        C36315 r15 = r0;
+
         final Dialog dialog4 = dialog3;
-        C36315 r02 = new View.OnClickListener() {
+        View.OnClickListener r02 = new View.OnClickListener() {
             public void onClick(View view) {
                 if (button5.getText().equals("Yes!")) {
                     if (Constants.CUSTOM_EXPORT_RATE_DIALOG_TEXT_2 == null || Constants.CUSTOM_EXPORT_RATE_DIALOG_TEXT_2.equals("null")) {
@@ -1483,6 +1484,7 @@ public class ExportActivity extends Activity implements ExportOptionListener, Vi
                 }
             }
         };
+        View.OnClickListener r15 = r02;
         button.setOnClickListener(r15);
         final Button button7 = button2;
         final TextView textView5 = textView2;

@@ -695,10 +695,12 @@ public class FilterFragment extends Fragment implements FilterButtonListener, To
                 if (!Constants.FULL_SCREEN_Effect_NATIVE_FIRST) {
                     if (AdUtil.getInstance().isEffectInterstitialLoaded()) {
                         AdUtil.getInstance().ShowEffectInterstitial();
-                    } else if (AdUtil.getInstance().isEffectNativeLoaded() && AdUtil.getInstance().getEffect_fb_native() != null) {
+                  //  } else if (AdUtil.getInstance().isEffectNativeLoaded() && AdUtil.getInstance().getEffect_fb_native() != null) {
+                    } else if (AdUtil.getInstance().isEndingNativeLoaded() && AdUtil.getInstance().getEffect_fb_native() != null) {
                         ((MainActivity) getActivity()).showFloatingFBNativeAd(AdUtil.getInstance().getEffect_fb_native(), false);
                     }
-                } else if (AdUtil.getInstance().isEffectNativeLoaded()) {
+                //} else if (AdUtil.getInstance().isEffectNativeLoaded()) {
+                } else if (AdUtil.getInstance().isEndingNativeLoaded()) {
                     if (AdUtil.getInstance().getEffect_fb_native() != null) {
                         ((MainActivity) getActivity()).showFloatingFBNativeAd(AdUtil.getInstance().getEffect_fb_native(), false);
                     }

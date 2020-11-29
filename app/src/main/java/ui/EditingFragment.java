@@ -1,3 +1,4 @@
+/*
 package ui;
 
 import android.app.AlertDialog;
@@ -112,122 +113,192 @@ import util.ImageFilePath;
 import util.SharedPreferencesManager;
 import util.Utils;
 
-/* renamed from: ui.EditingFragment */
+*/
+/* renamed from: ui.EditingFragment *//*
+
 public class EditingFragment extends Fragment implements WaitScreenGoneListener, View.OnClickListener, OnSeekChangeListener, EffectButtonListener, EditorButtonListener, FilterButtonListener, RadioGroup.OnCheckedChangeListener, MoPubView.BannerAdListener {
     private static final String ADMOB_NATIVE_BANNER_ADUNIT_ID = "ca-app-pub-4195495625122728/2301275229";
     private static final String MOPUB_NATIVE_BANNER_ADUNIT_ID = "d86b5a12d15944b9b7202fd0c80c9167";
     private boolean adAvailable = false;
     AdLoader adLoader;
     private RelativeLayout adView;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public int adjustValue = -1;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public UnifiedNativeAd admob_nativeAd;
     private boolean all_filter = false;
     Button artButton;
     TextView art_text;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public boolean bannerLoaded = false;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public Bitmap bitmap;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public BitmapCache bitmapCache;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public Bitmap blendBitmap = null;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public RelativeLayout bottomLayoutContainer;
     private boolean bottomViewClose = false;
     AdLoader.Builder builder;
     private Button check;
     private Button check_two;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public final CharSequence[] colorchalk = {"Thin Edge", "Medium Edge", "Thick Edge"};
     private float density = 0.0f;
     EditingFragmentDetails details = null;
     AppCompatRadioButton editorButton;
     private List<EditorFilter> editorFilters = new ArrayList();
     boolean editor_button_activated = false;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public List<EnhanceFilters> editor_items = new ArrayList();
     TextView editor_text;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public Effect effect;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public Bitmap effectBitmap = null;
     AppCompatRadioButton effectButton;
     private EffectButtonFragment effectButtonFragment;
     Dialog effectLoadingDialog;
     boolean effect_button_activated = false;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public boolean effect_button_checked = false;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public String effect_name = null;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public boolean effect_selected = false;
     TextView effect_text;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public String enhance_filter_name = null;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public int enhance_position = -1;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public boolean enhance_selected = false;
     private boolean enjoyPencilPhotoSketch = false;
     private boolean enjoyPencilPhotoSketch_2 = false;
     private boolean fb_load_called = false;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public boolean feedback = false;
     private boolean feedback_2 = false;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public Uri fileUri;
     AppCompatRadioButton filterButton;
     private FilterButtonFragment filterButtonFragment;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public String filterConstant = null;
     FilterHolder filterHolder;
     private float filter_Value = 0.0f;
     boolean filter_button_activated = false;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public TextView filter_name;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public int filter_position = -1;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public boolean filter_selected = false;
     TextView filter_text;
     FilterType filter_type = null;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public TextView filter_value;
     Mat filtered;
     Mat finalmat;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public boolean freshStart = true;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public Bitmap gpuBitmap;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public GPUImage gpuImage;
     GPUImageFilter gpuImageFilter;
     Handler handler;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public HashMap<String, Boolean> hashMap;
     private RelativeLayout image;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public GPUImageFilterGroup imageFilterGroup;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public RelativeLayout imageLayout;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public ImageView imageView;
     IndicatorSeekBar indicatorSeekBar;
     LayoutInflater layout_inflater = null;
     Dialog loadingDialog;
     TextView loadingText;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public EditorOptionsAdapter mAdapter;
     Context mContext;
     private RecyclerView.LayoutManager mLayoutManager;
     private RecyclerView.LayoutManager menuLayoutManager;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public MoPubNative moPubNative;
     private MoPubNative.MoPubNativeNetworkListener moPubNativeNetworkListener;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public MoPubView moPubView;
     NativeAd mopubNativeAd;
     private RelativeLayout nativeAdContainer;
@@ -237,16 +308,24 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
     View native_rateView;
     private NativeBannerAd nativebanner;
     private Button no_rate;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public Bitmap optionBitmap;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public RelativeLayout optionLayout;
     private TextView optionText;
     Mat original;
     private boolean originalBitmap = false;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public CustomViewPager pager;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public ViewPagerAdapter pagerAdapter;
     TextView percentage;
     private RelativeLayout radio_buttonLayout;
@@ -254,15 +333,21 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
     private Button rateIt;
     private boolean rateViewShowing = false;
     RecyclerView recyclerView;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public boolean rerun = true;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public Bitmap resize = null;
     FloatingActionButton restart;
     boolean resume_temp = false;
     private Button save;
     private RelativeLayout screen;
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public RelativeLayout seekBar_view;
     IndicatorSeekBar seekbar;
     List<String> sequence = new ArrayList();
@@ -301,12 +386,14 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
 
     public void onCreate(@Nullable Bundle bundle) {
         super.onCreate(bundle);
-       /* if (!Constants.REMOVE_ADS && !Constants.ED_NATIVE_FULL_SCREEN_SHOWN && AdUtil.getInstance().isFBEditingNativeLoaded() && Constants.START_UP_AD) {
+       */
+/* if (!Constants.REMOVE_ADS && !Constants.ED_NATIVE_FULL_SCREEN_SHOWN && AdUtil.getInstance().isFBEditingNativeLoaded() && Constants.START_UP_AD) {
             Log.d("editingnative", "loaded");
             Constants.START_UP_AD = false;
             ((MainActivity) getActivity()).showFloatingFBNativeAd(AdUtil.getInstance().getEditing_fb_native(), true);
             this.adAvailable = true;
-        }*/
+        }*//*
+
     }
 
     public View onCreateView(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, @Nullable Bundle bundle) {
@@ -330,7 +417,7 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         this.artButton = (Button) this.view.findViewById(C3674R.C3676id.art_button);
         this.effect_text = (TextView) this.view.findViewById(R.id.effect_text);
         this.filter_text = (TextView) this.view.findViewById(C3674R.C3676id.filter_text);
-        this.editor_text = (TextView) this.view.findViewById(C3674R.C3676id.editor_text);
+        this.editor_text = (TextView) this.view.findViewById(R.id.editor_text);
         if (!(!Constants.CUSTOM_EDITING_SCREEN_ENABLED || Constants.RADIO_BUTTON_LAYOUT_BG_COLOR == null || Constants.RADIO_BUTTON_TINT_COLOR == null || Constants.RADIO_BUTTON_TEXT_COLOR == null)) {
             this.radio_buttonLayout.setBackgroundColor(Color.parseColor(Constants.RADIO_BUTTON_LAYOUT_BG_COLOR));
             if (Build.VERSION.SDK_INT >= 21) {
@@ -595,7 +682,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         });
     }
 
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public void populateUnifiedNativeAdView(UnifiedNativeAd unifiedNativeAd, UnifiedNativeAdView unifiedNativeAdView) {
         unifiedNativeAdView.setHeadlineView(unifiedNativeAdView.findViewById(R.id.ad_headline));
         unifiedNativeAdView.setBodyView(unifiedNativeAdView.findViewById(R.id.ad_body));
@@ -722,7 +811,8 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         }
     }
 
-   /* private void inflateAd(NativeBannerAd nativeBannerAd2) {
+   */
+/* private void inflateAd(NativeBannerAd nativeBannerAd2) {
         nativeBannerAd2.unregisterView();
         int i = 0;
         this.adView = (RelativeLayout) LayoutInflater.from(getActivity()).inflate(C3674R.C3678layout.fb_native_banner, this.nativeAdLayout, false);
@@ -757,7 +847,8 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         layoutParams.height = -2;
         layoutParams.width = -2;
         this.bottomLayoutContainer.setLayoutParams(layoutParams);
-    }*/
+    }*//*
+
 
     public void initializeContent() {
         if (((MainActivity) getActivity()) == null || ((MainActivity) getActivity()).getEditingFragmentDetails() == null) {
@@ -988,12 +1079,16 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         new ReinitializeTask().execute(new Void[0]);
     }
 
-    /* renamed from: ui.EditingFragment$ReinitializeTask */
+    */
+/* renamed from: ui.EditingFragment$ReinitializeTask *//*
+
     private class ReinitializeTask extends AsyncTask<Void, Void, Void> {
         private ReinitializeTask() {
         }
 
-        /* access modifiers changed from: protected */
+        */
+/* access modifiers changed from: protected *//*
+
         public Void doInBackground(Void... voidArr) {
             if (EditingFragment.this.bitmapCache == null || EditingFragment.this.bitmapCache.getCacheBitmap(Constants.ORIGINAL_IMAGE) != null) {
                 return null;
@@ -1413,29 +1508,39 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         }
     }
 
-    /* access modifiers changed from: package-private */
+    */
+/* access modifiers changed from: package-private *//*
+
     public float getNext() {
         return new Random().nextFloat();
     }
 
-    /* access modifiers changed from: package-private */
+    */
+/* access modifiers changed from: package-private *//*
+
     public int getNextInt(int i, int i2) {
         return new Random().nextInt((i2 - i) + 1) + i;
     }
 
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public void disableButtons() {
         this.effect_button_activated = false;
         this.filter_button_activated = false;
         this.editor_button_activated = false;
     }
 
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public void activateButton(RadioButton radioButton) {
         radioButton.setChecked(true);
     }
 
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public void deactivateButton(RadioButton radioButton) {
         radioButton.setChecked(false);
     }
@@ -1552,13 +1657,24 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
             AlertDialog.Builder builder2 = new AlertDialog.Builder(getActivity());
             builder2.setTitle("Color Chalk-Choose Effect");
             builder2.setItems(this.colorchalk, new DialogInterface.OnClickListener() {
-                /* JADX WARNING: Removed duplicated region for block: B:17:0x0046  */
-                /* JADX WARNING: Removed duplicated region for block: B:21:0x00d7  */
-                /* JADX WARNING: Removed duplicated region for block: B:25:0x0168  */
-                /* JADX WARNING: Removed duplicated region for block: B:35:? A[RETURN, SYNTHETIC] */
-                /* Code decompiled incorrectly, please refer to instructions dump. */
+                */
+/* JADX WARNING: Removed duplicated region for block: B:17:0x0046  *//*
+
+                */
+/* JADX WARNING: Removed duplicated region for block: B:21:0x00d7  *//*
+
+                */
+/* JADX WARNING: Removed duplicated region for block: B:25:0x0168  *//*
+
+                */
+/* JADX WARNING: Removed duplicated region for block: B:35:? A[RETURN, SYNTHETIC] *//*
+
+                */
+/* Code decompiled incorrectly, please refer to instructions dump. *//*
+
                 public void onClick(android.content.DialogInterface r7, int r8) {
-                    /*
+                    */
+/*
                         r6 = this;
                         ui.EditingFragment r7 = p049ui.EditingFragment.this
                         java.lang.CharSequence[] r7 = r7.colorchalk
@@ -1778,7 +1894,8 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
                         r7.setEffectName(r8)
                     L_0x01f6:
                         return
-                    */
+                    *//*
+
                     throw new UnsupportedOperationException("Method not decompiled: p049ui.EditingFragment.C510511.onClick(android.content.DialogInterface, int):void");
                 }
             });
@@ -1842,7 +1959,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         hideSeekbar();
     }
 
-    /* access modifiers changed from: package-private */
+    */
+/* access modifiers changed from: package-private *//*
+
     public void ApplyFilter(final boolean z) {
         final Handler handler2 = new Handler();
         handler2.postDelayed(new Runnable() {
@@ -1888,7 +2007,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         }, 200);
     }
 
-    /* access modifiers changed from: package-private */
+    */
+/* access modifiers changed from: package-private *//*
+
     public void ApplyEnhanceFilter() {
         final Handler handler2 = new Handler();
         handler2.postDelayed(new Runnable() {
@@ -2194,7 +2315,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         }
     }
 
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public void Enhance(IndicatorSeekBar indicatorSeekBar2) {
         char c = 65535;
         if (indicatorSeekBar2 == this.indicatorSeekBar) {
@@ -2457,11 +2580,15 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         new StartUpLoadingTask(getActivity()).execute(new Void[0]);
     }
 
-    /* renamed from: ui.EditingFragment$FragmentStateResume */
+    */
+/* renamed from: ui.EditingFragment$FragmentStateResume *//*
+
     public class FragmentStateResume extends AsyncTask<Void, Void, Bitmap> {
         private String _cache_name;
 
-        /* renamed from: b */
+        */
+/* renamed from: b *//*
+
         Bitmap f6041b = null;
         public Bitmap bitmap;
         Dialog dialog;
@@ -2511,7 +2638,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
             Log.d("FragmentState", "Constructor");
         }
 
-        /* access modifiers changed from: protected */
+        */
+/* access modifiers changed from: protected *//*
+
         public Bitmap doInBackground(Void... voidArr) {
             Log.d("FragmentState", "doinBackground");
             if (this.seq == null || this.seq.size() <= 0) {
@@ -2561,13 +2690,17 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
             return this.f6041b;
         }
 
-        /* access modifiers changed from: protected */
+        */
+/* access modifiers changed from: protected *//*
+
         public void onPreExecute() {
             super.onPreExecute();
             Log.d("FragmentState", "PreExecute");
         }
 
-        /* access modifiers changed from: protected */
+        */
+/* access modifiers changed from: protected *//*
+
         public void onPostExecute(Bitmap bitmap2) {
             super.onPostExecute(bitmap2);
             if (this.dialog != null && this.dialog.isShowing()) {
@@ -2665,17 +2798,23 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
             }
         }
 
-        /* access modifiers changed from: protected */
+        */
+/* access modifiers changed from: protected *//*
+
         public void onProgressUpdate(Void... voidArr) {
             super.onProgressUpdate(voidArr);
             Log.d("FragmentState", "ProgressUpdate");
         }
     }
 
-    /* renamed from: ui.EditingFragment$StartUpLoadingTask */
+    */
+/* renamed from: ui.EditingFragment$StartUpLoadingTask *//*
+
     private class StartUpLoadingTask extends AsyncTask<Void, Void, Void> {
 
-        /* renamed from: re */
+        */
+/* renamed from: re *//*
+
         Mat f6042re;
 
         public StartUpLoadingTask(Context context) {
@@ -2687,13 +2826,17 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
             EditingFragment.this.percentage = (TextView) EditingFragment.this.loadingDialog.findViewById(R.id.percentage);
         }
 
-        /* access modifiers changed from: protected */
+        */
+/* access modifiers changed from: protected *//*
+
         public void onPreExecute() {
             super.onPreExecute();
             EditingFragment.this.loadingDialog.show();
         }
 
-        /* access modifiers changed from: protected */
+        */
+/* access modifiers changed from: protected *//*
+
         public void onPostExecute(Void voidR) {
             super.onPostExecute(voidR);
             EditingFragment.this.loadingDialog.dismiss();
@@ -2701,7 +2844,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
             ((MainActivity) EditingFragment.this.getActivity()).checkRateDialog();
         }
 
-        /* access modifiers changed from: protected */
+        */
+/* access modifiers changed from: protected *//*
+
         public Void doInBackground(Void... voidArr) {
             EditingFragment.this.updateLoadingProgress("Loading Image", 25);
             EditingFragment.this.bitmapCache.addBitmapToCache(Constants.ORIGINAL_IMAGE, EditingFragment.this.bitmap);
@@ -2718,7 +2863,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         }
     }
 
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public void updateLoadingProgress(final String str, final int i) {
         if (getActivity() != null) {
             getActivity().runOnUiThread(new Runnable() {
@@ -2731,7 +2878,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         }
     }
 
-    /* renamed from: ui.EditingFragment$EffectApplyingTask */
+    */
+/* renamed from: ui.EditingFragment$EffectApplyingTask *//*
+
     private class EffectApplyingTask extends AsyncTask<Void, Void, Void> {
         String effectName = null;
 
@@ -2744,7 +2893,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
             EditingFragment.this.effectLoadingDialog.show();
         }
 
-        /* access modifiers changed from: protected */
+        */
+/* access modifiers changed from: protected *//*
+
         public void onPreExecute() {
             super.onPreExecute();
             if (EditingFragment.this.effectBitmap != null) {
@@ -2761,7 +2912,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
             }
         }
 
-        /* access modifiers changed from: protected */
+        */
+/* access modifiers changed from: protected *//*
+
         public void onPostExecute(Void voidR) {
             super.onPostExecute(voidR);
             if (EditingFragment.this.effectLoadingDialog != null && EditingFragment.this.effectLoadingDialog.isShowing()) {
@@ -2786,7 +2939,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
             EditingFragment.this.checkForAd();
         }
 
-        /* access modifiers changed from: protected */
+        */
+/* access modifiers changed from: protected *//*
+
         public Void doInBackground(Void... voidArr) {
             if (EditingFragment.this.bitmap != null) {
                 Bitmap unused = EditingFragment.this.effectBitmap = Utils.convert(EditingFragment.this.effect.getEffect(this.effectName, EditingFragment.this.bitmap.copy(EditingFragment.this.bitmap.getConfig(), true)), Bitmap.Config.RGB_565);
@@ -2805,7 +2960,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         }
     }
 
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public static Bitmap resize(Bitmap bitmap2, int i, int i2) {
         if (i2 <= 0 || i <= 0) {
             return bitmap2;
@@ -2960,7 +3117,9 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
         return Bitmap.createBitmap(iArr, width, height, Bitmap.Config.ARGB_8888);
     }
 
-    /* access modifiers changed from: private */
+    */
+/* access modifiers changed from: private *//*
+
     public void checkForAd() {
         if (Constants.REMOVE_ADS) {
             return;
@@ -2974,13 +3133,15 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
                 if (!Constants.FULL_SCREEN_Effect_NATIVE_FIRST) {
                     if (AdUtil.getInstance().isEffectInterstitialLoaded()) {
                         AdUtil.getInstance().ShowEffectInterstitial();
-                    } /*else if (AdUtil.getInstance().isEffectNativeLoaded() && AdUtil.getInstance().getEffect_fb_native() != null) {
+                    } */
+/*else if (AdUtil.getInstance().isEffectNativeLoaded() && AdUtil.getInstance().getEffect_fb_native() != null) {
                         ((MainActivity) getActivity()).showFloatingFBNativeAd(AdUtil.getInstance().getEffect_fb_native(), false);
                     }
                 } else if (AdUtil.getInstance().isEffectNativeLoaded()) {
                     if (AdUtil.getInstance().getEffect_fb_native() != null) {
                         ((MainActivity) getActivity()).showFloatingFBNativeAd(AdUtil.getInstance().getEffect_fb_native(), false);
-                    }*/
+                    }*//*
+
                 } else if (AdUtil.getInstance().isEffectInterstitialLoaded()) {
                     AdUtil.getInstance().ShowEffectInterstitial();
                 }
@@ -2992,4 +3153,4 @@ public class EditingFragment extends Fragment implements WaitScreenGoneListener,
             }
         }
     }
-}
+}*/

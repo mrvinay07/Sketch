@@ -251,8 +251,8 @@ public class ExportFragment extends Fragment implements WaitScreenGoneListener, 
         this.fresh_start = true;
         this.handler = new Handler();
         this.viewList = new ArrayList();
-        this.viewList.add(new ExportOptionsView("Save", (String) null, R.drawable.baseline_save_alt_black_48));
-        this.viewList.add(new ExportOptionsView("Share", (String) null, R.drawable.baseline_share_black_48));
+        this.viewList.add(new ExportOptionsView("Save", (String) null, R.drawable.flogo/*R.drawable.baseline_save_alt_black_48*/));
+        this.viewList.add(new ExportOptionsView("Share", (String) null,R.drawable.flogo /*R.drawable.baseline_share_black_48*/));
         this.viewList.add(new ExportOptionsView("Facebook", (String) null, R.drawable.flogo));
         this.viewList.add(new ExportOptionsView("Instagram", (String) null, R.drawable.insta));
         this.itemsAdapter = new ExportOptionsItemsAdapter(this.viewList, this);
@@ -2756,9 +2756,9 @@ public class ExportFragment extends Fragment implements WaitScreenGoneListener, 
         final TextView textView3 = textView;
         final Button button3 = button;
         LinearLayout linearLayout3 = linearLayout;
-        C513515 r15 = r0;
+        //C513515 r15 = r0;
         final Button button4 = button2;
-        C513515 r0 = new BaseRatingBar.OnRatingChangeListener() {
+        BaseRatingBar.OnRatingChangeListener r0 = new BaseRatingBar.OnRatingChangeListener() {
             public void onRatingChange(BaseRatingBar baseRatingBar, float f, boolean z) {
                 if (f >= 4.0f) {
                     try {
@@ -2788,7 +2788,8 @@ public class ExportFragment extends Fragment implements WaitScreenGoneListener, 
                 FireBaseHelper.getInstance().LogEvent("Rate_Analytics", bundle2);
             }
         };
-        scaleRatingBar.setOnRatingChangeListener(r15);
+        //scaleRatingBar.setOnRatingChangeListener(r15);
+        scaleRatingBar.setOnRatingChangeListener(r0);
         if (Constants.CUSTOM_EXPORT_RATE_DIALOG_TITLE_TEXT == null || Constants.CUSTOM_EXPORT_RATE_DIALOG_TITLE_TEXT.equals("null")) {
             textView2.setText(R.string.app_name);
         } else {

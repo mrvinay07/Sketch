@@ -306,4 +306,25 @@ public class Constants {
     public static int lpsac;
     public static int lpsize;
     public static boolean main_activity_admob_first = false;
+    public static enum SEEK_BAR {
+      SEEK_BAR_1(4300), SEEK_BAR_2(4301), SEEK_BAR_3(4302), SEEK_BAR_4(4303), SEEK_BAR_5(4303);
+        SEEK_BAR(int value){
+          this.value = value;
+        }
+        private int value;
+        public int getValue(){
+            return value;
+        }
+    };
+    public static enum FILTER_VALUE {
+        FILTER_VALUE_1(9300), FILTER_VALUE_2(9301), FILTER_VALUE_3(9302), FILTER_VALUE_4(9303), FILTER_VALUE_5(9303);
+        FILTER_VALUE(int value){
+            this.value = value;
+        }
+        private int value;
+
+        public int getValue(){
+            return value;
+        }
+    };
 }

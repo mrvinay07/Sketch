@@ -499,15 +499,16 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
     }
 
     public void onSeeking(SeekParams seekParams) {
-        if (seekParams.seekBar.getId() == R.id.seek_1) {
+        //if (seekParams.seekBar.getId() == R.id.seek_1) {
+        if (seekParams.seekBar.getId() == Constants.SEEK_BAR.SEEK_BAR_1.getValue()) {
             this.filterValueList.get(0).setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
-        } else if (seekParams.seekBar.getId() == R.id.seek_2) {
+        } else if (seekParams.seekBar.getId() == Constants.SEEK_BAR.SEEK_BAR_2.getValue()) {
             this.filterValueList.get(1).setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
-        } else if (seekParams.seekBar.getId() == R.id.seek_3) {
+        } else if (seekParams.seekBar.getId() == Constants.SEEK_BAR.SEEK_BAR_3.getValue()) {
             this.filterValueList.get(2).setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
-        } else if (seekParams.seekBar.getId() == R.id.seek_4) {
+        } else if (seekParams.seekBar.getId() == Constants.SEEK_BAR.SEEK_BAR_4.getValue()) {
             this.filterValueList.get(3).setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
-        } else if (seekParams.seekBar.getId() == R.id.seek_5) {
+        } else if (seekParams.seekBar.getId() == Constants.SEEK_BAR.SEEK_BAR_1.getValue()) {
             this.filterValueList.get(4).setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
         } else {
             this.filter_value.setText(String.valueOf(((float) seekParams.seekBar.getProgress()) / 100.0f));
@@ -1915,15 +1916,16 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
             TextView textView3 = new TextView(getActivity());
             textView3.setTextSize(13.0f);
             if (i6 == 0) {
-                textView3.setId(R.id.filter_value_1);
+                //textView3.setId(R.id.filter_value_1);
+                textView3.setId(Constants.FILTER_VALUE.FILTER_VALUE_1.getValue());
             } else if (i6 == i4) {
-                textView3.setId(R.id.filter_value_2);
+                textView3.setId(Constants.FILTER_VALUE.FILTER_VALUE_2.getValue());
             } else if (i6 == 2) {
-                textView3.setId(R.id.filter_value_3);
+                textView3.setId(Constants.FILTER_VALUE.FILTER_VALUE_3.getValue());
             } else if (i6 == 3) {
-                textView3.setId(R.id.filter_value_4);
+                textView3.setId(Constants.FILTER_VALUE.FILTER_VALUE_4.getValue());
             } else if (i6 == 4) {
-                textView3.setId(R.id.filter_value_5);
+                textView3.setId(Constants.FILTER_VALUE.FILTER_VALUE_5.getValue());
             }
             textView3.setTextColor(Color.parseColor("#FFFFFF"));
             if (Build.VERSION.SDK_INT < 16) {
@@ -1940,15 +1942,16 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
             textView3.setLayoutParams(layoutParams6);
             IndicatorSeekBar build = IndicatorSeekBar.with(getActivity()).min(0.0f).max(100.0f).progress(50.0f).showIndicatorType(0).thumbColor(Color.parseColor("#ffffff")).thumbSize(15).onlyThumbDraggable(false).trackProgressColor(Color.parseColor("#ffffff")).trackProgressSize(4).trackBackgroundColor(Color.parseColor("#333333")).trackBackgroundSize(2).build();
             if (i6 == 0) {
-                build.setId(R.id.seek_1);
+                //build.setId(R.id.seek_1);
+                build.setId(Constants.SEEK_BAR.SEEK_BAR_1.getValue());
             } else if (i6 == 1) {
-                build.setId(R.id.seek_2);
+                build.setId(Constants.SEEK_BAR.SEEK_BAR_2.getValue());
             } else if (i6 == 2) {
-                build.setId(R.id.seek_3);
+                build.setId(Constants.SEEK_BAR.SEEK_BAR_3.getValue());
             } else if (i6 == 3) {
-                build.setId(R.id.seek_4);
+                build.setId(Constants.SEEK_BAR.SEEK_BAR_4.getValue());
             } else if (i6 == 4) {
-                build.setId(R.id.seek_5);
+                build.setId(Constants.SEEK_BAR.SEEK_BAR_5.getValue());
             }
             TextView textView4 = new TextView(getActivity());
             layoutParams4.setMargins(((PhotoActivity) getActivity()).dpToPx(10), ((PhotoActivity) getActivity()).dpToPx(5), 0, 0);
@@ -1982,13 +1985,13 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
                 textView4.setText(AppEventsConstants.EVENT_PARAM_VALUE_NO);
                 textView5.setText("1");
             } else if (enhanceFilters.getFilterTitle().equals("Shadow Highlight")) {
-                if (build.getId() == R.id.seek_1) {
+                if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_1.getValue()) {
                     build.setMax(100.0f);
                     build.setMin(-200.0f);
                     textView4.setText("-2");
                     textView5.setText("1");
                     textView3.setText(String.valueOf(AppEventsConstants.EVENT_PARAM_VALUE_NO));
-                } else if (build.getId() == R.id.seek_2) {
+                } else if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_2.getValue()) {
                     build.setMax(200.0f);
                     build.setMin(-100.0f);
                     textView4.setText("-1");
@@ -2000,13 +2003,13 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
                 build.setMin(-100.0f);
                 build.setProgress(15.0f);
             } else if (enhanceFilters.getFilterTitle().equals("White Balance")) {
-                if (build.getId() == R.id.seek_1) {
+                if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_1.getValue()) {
                     build.setMax(100.0f);
                     build.setMin(-100.0f);
                     textView3.setText(String.valueOf(AppEventsConstants.EVENT_PARAM_VALUE_NO));
                     textView4.setText("-1");
                     textView5.setText("1");
-                } else if (build.getId() == R.id.seek_2) {
+                } else if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_2.getValue()) {
                     build.setMax(500.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);
@@ -2015,35 +2018,35 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
                     textView5.setText("5");
                 }
             } else if (enhanceFilters.getFilterTitle().equals("Haze")) {
-                if (build.getId() == R.id.seek_1) {
+                if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_1.getValue()) {
                     build.setMax(50.0f);
                     build.setMin(-50.0f);
                     build.setProgress(0.0f);
                     textView3.setText(String.valueOf(AppEventsConstants.EVENT_PARAM_VALUE_NO));
                     textView4.setText("-0.5");
                     textView5.setText("0.5");
-                } else if (build.getId() == R.id.seek_2) {
+                } else if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_2.getValue()) {
                     build.setMax(50.0f);
                     build.setMin(-50.0f);
                     build.setProgress(0.0f);
                     textView3.setText(String.valueOf(AppEventsConstants.EVENT_PARAM_VALUE_NO));
                     textView4.setText("-0.5");
                     textView5.setText("0.5");
-                } else if (build.getId() == R.id.seek_3) {
+                } else if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_3.getValue()) {
                     build.setMax(100.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);
                     textView3.setText(String.valueOf("1"));
                     textView4.setText(AppEventsConstants.EVENT_PARAM_VALUE_NO);
                     textView5.setText("1");
-                } else if (build.getId() == R.id.seek_4) {
+                } else if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_4.getValue()) {
                     build.setMax(100.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);
                     textView3.setText(String.valueOf("1"));
                     textView4.setText(AppEventsConstants.EVENT_PARAM_VALUE_NO);
                     textView5.setText("1");
-                } else if (build.getId() == R.id.seek_5) {
+                } else if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_5.getValue()) {
                     build.setMax(100.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);
@@ -2052,21 +2055,21 @@ public class EditorFragment extends Fragment implements EditorButtonListener, On
                     textView5.setText("1");
                 }
             } else if (enhanceFilters.getFilterTitle().equals("Emboss")) {
-                if (build.getId() == R.id.seek_1) {
+                if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_1.getValue()) {
                     build.setMax(100.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);
                     textView3.setText(String.valueOf("1"));
                     textView4.setText(AppEventsConstants.EVENT_PARAM_VALUE_NO);
                     textView5.setText("1");
-                } else if (build.getId() == R.id.seek_2) {
+                } else if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_2.getValue()) {
                     build.setMax(500.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);
                     textView3.setText(String.valueOf("1"));
                     textView4.setText(AppEventsConstants.EVENT_PARAM_VALUE_NO);
                     textView5.setText("5");
-                } else if (build.getId() == R.id.seek_3) {
+                } else if (build.getId() == Constants.SEEK_BAR.SEEK_BAR_3.getValue()) {
                     build.setMax(500.0f);
                     build.setMin(0.0f);
                     build.setProgress(100.0f);

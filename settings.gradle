@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':mopub-sdk-5.15.0'
 rootProject.name = "Sketch"
